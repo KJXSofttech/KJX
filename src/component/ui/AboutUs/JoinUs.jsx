@@ -16,7 +16,7 @@ const JoinUs = () => {
     const [loading, setLoading] = useState(false)
 
     const handleSubmit = async (e) => {
-        navigate("/JoinUsSection");
+        navigate("n");
     }
 
 
@@ -52,14 +52,12 @@ const Button = styled(Link)`
     font-size: 10px;
     z-index: 1;
     margin-top:20px;
- 
-
 
     
     @media (min-width:768px){
         // width:190px;
         // height: 50px;
-        font-size: 18px;
+        font-size: 15px;
         padding:9px 24px;
         margin-top:30px;
     }
@@ -76,7 +74,6 @@ const P = styled.p`
     font-size: 16px;
     font-weight: normal;
     color:grey;
-    padding: 0px 45px
 `
 
 const H1 = styled.h1`

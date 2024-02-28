@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import '../HireUs/Form.css';
 import country from '../HireUs/country.json';
 import emailjs from 'emailjs-com';
@@ -142,6 +142,7 @@ const HireNowForm = () => {
                                         <option value="DevOps-Engineer">DevOps Engineer</option>
                                         <option value="Vue-Js-Developer">Vue Js Developer</option>
                                         <option value="Digital-Marketing">Digital Marketing</option>
+  
                                     </select>
                                 </div>
                             </div>

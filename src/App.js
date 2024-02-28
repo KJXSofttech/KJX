@@ -89,6 +89,9 @@ import { Copyright } from '@mui/icons-material';
 import CopyrightPage from './component/static/CopyRightPage';
 import FooterSection from './component/static/FooterSection';
 import Footers from './component/static/footer';
+import ContactForm from './component/ui/Contact/contactForm';
+import HireNowForm from './component/ui/HireUs/HireUs'
+import JoinUs from './component/ui/HireUs/JoinUs';
 
 
 
@@ -100,7 +103,10 @@ const App = () => {
       <Routes>
         <Route path="/" exact  element={ <Home />} />
         <Route path="/*" element={<ErrorPage/>} />
+        <Route path="/Contact" element={<ContactForm />} />
         <Route path="/careers"  element={<Career />} />
+        <Route path="/hireUsForm" element={<HireNowForm />} />
+        <Route path="/JoinUsSection" element={<JoinUs />} />      
         <Route path="/hire-developers"  element={<HireDeveloper />} />
         <Route path="/aboutus"  element={ <AboutScreen/>} />
         <Route path="/services"  element={<Services/>} />
@@ -174,7 +180,7 @@ const App = () => {
         <Route path="/services/digital-marketing/ppc"  element={<PPC_Development/>} />
         <Route path="/service_details"  element={< Service_Details/>} />
         <Route path="/benefits"  element={<Benefits/>} />
-        <Route path="/careerform/:applyID/:apply" element = {<CareerForm/>}/>
+        {/* <Route path="/careerform/:applyID/:apply" element = {<CareerForm/>}/> */}
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=login" element={<LoginAdmin />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=signup" element={<SignupAdmin />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=admin-upload-job" element={<JobOfferForm />} />

@@ -4,6 +4,7 @@ import chat from '../../../assets/contct/chat.png'
 import vector from '../../../assets/contct/Vector.png'
 import question from '../../../assets/contct/question.png'
 
+
 const ContactUs = () => {
 
     const handleCall = () => {
@@ -22,16 +23,16 @@ const ContactUs = () => {
     return ( 
 
         <div>
-            <div className="bg-[url('https://i.ibb.co/48MgFp8/flower-bg-1.png')] bg-cover bg-center h-[800px] ">
+           <div className="bg-local bg-cover bg-center h-[800px]" style={{ backgroundImage: "url(https://cdn.shopify.com/shopifycloud/identity/assets/gradient/gradient-background-c1d8cb3f0925910cfff2493c4442d4e2c1cb6b8a267903342574faee6f70c26c.png)" }}>
+
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 
                     <div className="mt-6 grid grid-cols-3 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 justify-items-center">
                         <div className="group relative mx-auto items-center">
                             <img onClick={handleCall} src={call} alt='' className="cursor-pointer " />
                             <div className="mt-4 flex flex-col text-center">
-                                <p className='text-[#292126]'>+91966108799</p>
-                                <p><span className='text-[#006400]'>Mon-Fri</span> 10 am - 8 pm IST</p>
-
+                                <p className='text-white'>+919661087999</p>
+                                <p className='text-white'><span className='text-white'>Mon-Fri</span> 10 am - 8 pm IST</p>
                             </div>
                         </div>
                         <div className="group relative mx-auto items-center">
@@ -41,19 +42,19 @@ const ContactUs = () => {
 
 
                             <div className="mt-4 flex flex-col text-center">
-                                <p className='text-[#292126]'><span className='text-[#006400]' >
+                                <p className='text-white'><span className='text-white' >
                                     <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/hrdepartment@kjxsofttech.com">
                                         Click Here
                                     </a>
                                 </span> to send</p>
-                                <p className='text-[#292126]'>us an email</p>
+                                <p className='text-white'>us an email</p>
 
                             </div>
                         </div>
                         <div className="group relative mx-auto items-center">
                             <img onClick={handleChat} src={chat} alt='' className="cursor-pointer " />
                             <div className="mt-4 flex flex-col text-center">
-                                <p className='text-[#292126]'><span className='text-[#006400]'>Mon-Fri</span> 10 am - 8 pm IST</p>
+                                <p className='text-white'><span className='text-white'>Mon-Fri</span> 10 am - 8 pm IST</p>
 
 
                             </div>

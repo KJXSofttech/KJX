@@ -68,14 +68,13 @@ const Card = styled.div`
     height:500px;
     border-radius: 10px;
     background-color: #fff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 0px;
     margin: 10px;
     overflow: hidden;
-    box-shadow:0px 0px 5px lightgrey;
+    box-shadow:0px 0px 5px lightgrey;        
 
     img{
         width: 50%;
@@ -91,7 +90,11 @@ const Card = styled.div`
     h1{
         width: 100%;
         text-align:center;
+        font-size:18px 
+        
     }
+    
+
 
     
     @media (min-width:766px){
@@ -99,12 +102,13 @@ const Card = styled.div`
     }  
 `
 
+
 const HolderTwo = styled.div`
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    
 
     @media (min-width:768px){
         width:100%;

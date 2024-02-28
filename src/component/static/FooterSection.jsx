@@ -11,6 +11,9 @@ import bgImag from '../../assets/otherImage/footerbg.jpg'
 import footerImg from '../../assets/otherImage/footer_image.png'
 import foterImg from '../../assets/otherImage/footer_img.png'
 import footer from '../../assets/otherImage/footer-corner.png'
+import { red } from "@mui/material/colors"
+
+
 
 const FooterSection = () => {
     return (
@@ -24,29 +27,32 @@ const FooterSection = () => {
                             <div class="flex  gap-x-4 mt-1 ">
                                 <div class="h-px flex-auto bg-gray-100"></div>
                             </div>
-                            <ul role="list" class="my-2 grid grid-cols-1 gap-4 text-sm leading-6 text-orange-700 sm:grid-cols-2 sm:gap-6">
+                            <ul role="list" class="my-2 grid grid-cols-1 gap-4 text-sm leading-6 text-black-700 sm:grid-cols-2 sm:gap-6">
+                           
+
                                 <Div>
                                     <Holder >
-                                        <Icon>
-                                            <FaLocationDot />
+                                        <Icon > 
+                                                                                  
+                                            <FaLocationDot style={{color:'#E5180E'}}/>  
                                         </Icon>
                                         <Spans>PATNA, BIHAR, 804453</Spans>
                                     </Holder>
                                     <Holder className="mt-1">
                                         <Icon>
-                                            <FaLocationDot />
+                                            <FaLocationDot style={{color:'#E5180E'}} />
                                         </Icon>
                                         <Spans> JAGATSINGHPUR , ODISHA , 754103</Spans>
                                     </Holder>
                                     <Holder className="mt-1">
                                         <Icon>
-                                            <HiMail />
+                                            <HiMail style={{color:'#1177ad'}}/>
                                         </Icon>
                                         <Spans> hrdepartment@kjxsofttech.com </Spans>
                                     </Holder>
                                     <Holder>
                                         <Icon>
-                                            <FaPhoneAlt />
+                                            <FaPhoneAlt style={{color:'#069002'}}/>
                                         </Icon>
                                         <Hold>
                                             <p>
@@ -54,8 +60,6 @@ const FooterSection = () => {
 
                                                 <Span >(+91) 9661087999 </Span>
                                             </p>
-
-
                                         </Hold>
                                     </Holder>
                                 </Div>
@@ -66,10 +70,10 @@ const FooterSection = () => {
                                 <div class="mx-auto max-w-lg px-8">
                                     <img src={logo} />
 
-                                    <p class="ml-1 text-lg leading-3 text-black">WE BELIEVE IN MAXIMIZING THE OUTPUT</p>
-                                    <div class="flex sm:justify-center space-x-6 mt-5 ">
+                                    <p class="ml-1 text-lg leading-2 text-black">WE BELIEVE IN MAXIMIZING THE OUTPUT</p>
+                                    <div class="flex sm:justify-center space-x-6 mt-5 mb-6">
                                         <a href="https://www.facebook.com/KJXSOFTTECH2020" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-500 bg-white p-2 rounded-lg">
-                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <svg class="h-4.5 w-5" fill="currentColor" viewBox="1.5 2 21 21" aria-hidden="true">
                                                 <path fill-rule="evenodd"
                                                     d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                                                     clip-rule="evenodd"></path>
@@ -83,12 +87,12 @@ const FooterSection = () => {
                                             </svg>
                                         </a>
                                         <a href="https://twitter.com/KJXSOFTTECH" target="_blank" rel="noopener noreferrer" class="text-black hover:text-black bg-white p-2 rounded-lg">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                                                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
                                             </svg>
                                         </a>
                                         <a href="https://www.linkedin.com/company/kjxsofttech/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-600 bg-white p-2 rounded-lg">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                                                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
                                             </svg>
                                         </a>
@@ -125,7 +129,7 @@ const HolderTwo = styled.div`
 const Icons = styled.img`
     width:40px;
     height:30px;
-    color:#fff;
+    color:#ffff;
     margin-right:10px;
     object-fit:contain;
 `

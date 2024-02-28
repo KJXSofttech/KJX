@@ -13,28 +13,28 @@ const Mission = () => {
     const handleSubmit = async (e) => {
         navigate("/JoinUsSection");
     }
-    return (
-        <Section>
-            <Wrapper>
-                <HolderOne>
-                    <H1>
-                        A
-                        <span> Mission-Driven </span>
-                        Team That Make <span>Ideas</span>  Happen
-                    </H1>
-                    <P>
-                        We are not just developers, marketers, designers, strategists or managers. We are even artists, cooks, travelers, readers, musicians, among the rest other talents. We celebrate these different perspectives of each individual that translate to tech skills and overall growth of the company.
-                    </P>
-                    <Button onClick={handleSubmit}>Join Now  </Button>
-                </HolderOne>
-            </Wrapper>
-        </Section>
-
-
-
-
-
-    )
+  return (
+    <Section>
+    <Wrapper>
+        <HolderOne>
+            <H1>
+            A
+                <span> Mission-Driven </span>
+                Team That Make <span>Ideas</span>  Happen
+            </H1>
+            <P>
+            We are not just developers, marketers, designers, strategists or managers. We are even artists, cooks, travelers, readers, musicians, among the rest other talents. We celebrate these different perspectives of each individual that translate to tech skills and overall growth of the company.
+            </P>
+            <Button onClick={handleSubmit}>Join Now  </Button>
+        </HolderOne>
+    </Wrapper>
+    </Section>
+    
+    
+    
+    
+   
+  )
 }
 
 export default Mission
@@ -53,9 +53,9 @@ const Button = styled.button`
 
     
     @media (min-width:768px){
-        width:125px;
-        height: 40px;
-        font-size: 20px;
+        width:102px;
+        height: 35px;
+        font-size: 17px;
     }
 `
 
