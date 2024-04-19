@@ -1,6 +1,8 @@
 import React  from "react"
 import styled from "styled-components"
 import img from "../../../assets/aboutus.png"
+import img1  from "../../../assets/Reg_number.jpeg"
+import img2  from "../../../assets/compNo.jpeg"
 const Welcome = () =>{
     return(
         <Section>
@@ -25,6 +27,10 @@ const Welcome = () =>{
 </P>
                         </Text2>
                     </HolderTwo>
+                        <image>
+                            <img src={img1} alt="" />
+                            <img src={img2} alt="" />
+                        </image>
                 </Holder>
             </Wrapper>
         </Section>
@@ -52,10 +58,10 @@ const HolderTwo = styled.div`
 `
 
 const Image = styled.div`
-    width:100%;
+    width:90%;
     
     img{
-        width:100%;
+        width:90%;
         height:100%;
         object-fit: contain;
     }
