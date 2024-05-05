@@ -240,6 +240,54 @@
             "name": "GPU Service",
             "link": "https://www.techtarget.com/searchvirtualdesktop/definition/GPU-graphics-processing-unit",
             "image": "https://i.ibb.co/mRd5cmB/hero16-9-machinelearning-portefolio.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "Cost Optimization",
+            "link": "https://cloudworkmates.com/cost-optimization/",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/business.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "DevOps",
+            "link": "https://cloudworkmates.com/devops/",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/signs.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "SAP Infra",
+            "link": "https://cloudworkmates.com/sap-on-aws/",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/sap-logo.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "Cloud Deployment",
+            "link": "https://cloudworkmates.com/deployment/",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/interface.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "Block chain, IOT",
+            "link": "https://cloudworkmates.com/#",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/security.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "Big Data, AI",
+            "link": "https://cloudworkmates.com/#",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/technology.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "Cloud Consultation",
+            "link": "https://cloudworkmates.com/cloud-consultation/",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/cloud.png"
+        },
+        {
+            "id": "Cloud Service",
+            "name": "Cloud Migration",
+            "link": "https://cloudworkmates.com/aws-migration-services-cloud-migration-to-aws/",
+            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/cloud-1.png"
         }
     ]
 }

@@ -1,26 +1,91 @@
+// import Carousel from "react-spring-3d-carousel";
+// import { useState, useEffect } from "react";
+// import { config } from "react-spring";
+
+// export default function Carroussel(props) {
+//   const table = props.cards.map((element, index) => {
+//     return { ...element, onClick: () => setGoToSlide(index) };
+//   });
+
+//   const [offsetRadius, setOffsetRadius] = useState(2);
+//   const [showArrows, setShowArrows] = useState(false);
+//   const [goToSlide, setGoToSlide] = useState(null);
+//   const [link, setGoLink] = useState();
+//   const [cards] = useState(table);
+
+//   useEffect(() => {
+//     setOffsetRadius(props.offset);
+//     setShowArrows(props.showArrows);
+//   }, [props.offset, props.showArrows]);
+
+//   return (
+//     <div
+//       style={{ width: props.width, height: props.height, margin: props.margin }}
+//     >
+//       <Carousel
+//         slides={cards}
+//         goToSlide={goToSlide}
+//         offsetRadius={offsetRadius}
+//         showNavigation={showArrows}
+//         animationConfig={config.gentle}
+//         ref={link}
+//       />
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+import React, { useState, useEffect } from "react";
 import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect } from "react";
 import { config } from "react-spring";
+import { v4 as uuidv4 } from "uuid";
+import Card from "./Card";
 
-export default function Carroussel(props) {
-  const table = props.cards.map((element, index) => {
-    return { ...element, onClick: () => setGoToSlide(index) };
-  });
-
-  const [offsetRadius, setOffsetRadius] = useState(2);
+export default function CarouselSlider(props) {
+  const [offsetRadius, setOffsetRadius] = useState(3);
   const [showArrows, setShowArrows] = useState(false);
   const [goToSlide, setGoToSlide] = useState(null);
-  const [link, setGoLink] = useState();
-  const [cards] = useState(table);
+  const [cards, setCards] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false); // State to manage carousel pause/resume
 
   useEffect(() => {
     setOffsetRadius(props.offset);
     setShowArrows(props.showArrows);
-  }, [props.offset, props.showArrows]);
+    setCards(props.cards.map((element, index) => ({ ...element, onClick: () => setGoToSlide(index) })));
+  }, [props.offset, props.showArrows, props.cards]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isPaused) { // Check if carousel is paused
+        setGoToSlide((prevIndex) => (prevIndex + 1) % cards.length);
+      }
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [cards, isPaused]); // Include isPaused in dependencies
+
+  useEffect(() => {
+    setCurrentIndex(goToSlide);
+  }, [goToSlide]);
+
+  // Event handlers to pause and resume carousel animation
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
 
   return (
-    <div
+    <div 
       style={{ width: props.width, height: props.height, margin: props.margin }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <Carousel
         slides={cards}
@@ -28,7 +93,7 @@ export default function Carroussel(props) {
         offsetRadius={offsetRadius}
         showNavigation={showArrows}
         animationConfig={config.gentle}
-        ref={link}
+        currentIndex={currentIndex}
       />
     </div>
   );

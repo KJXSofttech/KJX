@@ -35,49 +35,7 @@ const Portfolio = () => {
                 <Holder>
 
                     <ImageSlider />
-                    {/* <Cards>
-                        <Hold>
-                            <Li onClick={()=>{
-                                setSearchTerm("")
-                            }}>All</Li>
-                            <Li onClick={()=>{
-                                setSearchTerm("Python")
-                            }}>Big Data Projects</Li>
-                            <Li onClick={()=>{
-                                setSearchTerm("E-Commerce")
-                            }}>Data Science Projects</Li>
-                            <Li  onClick={()=>{
-                                setSearchTerm("UI/UX")
-                            }}>UI/UX Projects</Li>
-                            <Li  onClick={()=>{
-                                setSearchTerm("Apps")
-                            }}>Web Development Projects</Li>
-                            <Li onClick={()=>{
-                                setSearchTerm("SEO")
-                            }}>Cloud Projects</Li>
-                        </Hold>
-                        {
-                            loading?(
-                                <Load>loading...</Load>
-                            ):(        
-                        <HoldCard>
-                        {
-                            filteredData?.map((props)=>(
-                                <Div key={props.id}>
-                                    <Card src={`data:${props.image.contentType};base64,${props.image.data}`}/>
-                                    <Over>
-                                        <h1>
-                                            {props.title}
-                                        </h1>
-                                        <p>{props.discription}</p>
-                                    </Over>
-                                </Div>
-                            ))
-                        }
-                    </HoldCard>
-                            )
-                        }
-                    </Cards> */}
+                   
                 </Holder>
             </Wrapper>
         </Section>
