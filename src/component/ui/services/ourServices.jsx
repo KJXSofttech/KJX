@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import styled from "styled-components"; 
 import Carousel from "react-multi-carousel";
@@ -24,19 +26,22 @@ import reactjs from "../../../assets/react_brand.png"
 
 const OurServices = () => {
     const [hoveredService, setHoveredService] = useState(null);
-    const [displayAllAdditionalCards, setDisplayAllAdditionalCards] = useState(false);
+    const [hoveredAdditionalCard, setHoveredAdditionalCard] = useState(false);
 
     const handleMouseEnter = (serviceName) => {
-        if (serviceName === "mvc") {
-            setDisplayAllAdditionalCards(true);
-        } else {
-            setHoveredService(serviceName);
-        }
+        setHoveredService(serviceName);
     };
 
     const handleMouseLeave = () => {
         setHoveredService(null);
-        setDisplayAllAdditionalCards(false);
+    };
+
+    const handleAdditionalCardMouseEnter = () => {
+        setHoveredAdditionalCard(true);
+    };
+
+    const handleAdditionalCardMouseLeave = () => {
+        setHoveredAdditionalCard(false);
     };
 
     const responsiveOptions = {
@@ -91,137 +96,101 @@ const OurServices = () => {
                                     <img src={service.image} alt={service.name} />
                                     <ServiceName>{service.name}</ServiceName>
                                 </Image>
-                                {(hoveredService === service.name || (service.name === "mvc" && displayAllAdditionalCards)) && (
+                                {(hoveredService === service.name) && (
                                     <AdditionalInfo>
                                         <AdditionalCardContainer>
                                             {service.name === "Designing Service" && (
                                                 <>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={UIUX} alt="UIUX-img"/>
-                                                            <p>UI/UX DESIGN SERVICES</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={frontend} alt="frontend-img"/>
-                                                            <p>FRONTEND DEVELOPMENT</p>
-                                                        </AdditionalCard>
-                                                    </Row>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={responsive} alt="responsive-img"/>
-                                                            <p>RESPONSIVE WEBSITE DESIGN</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={mobileapp} alt="mobileapp-img"/>
-                                                            <p>MOBILE APPLICATION SERVICES</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={prototype} alt="prototype-img"/>
-                                                            <p>DESIGN PROTOTYPING</p>
-                                                        </AdditionalCard>
-                                                    </Row>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={UIUX} alt="UIUX-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={frontend} alt="frontend-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={responsive} alt="responsive-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={mobileapp} alt="mobileapp-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={prototype} alt="prototype-img"/>
+                                                    </AdditionalCard>
                                                 </>
                                             )}
-                                            {service.name === "Cloud Services" && (
+                                            {
+                                            service.name === "Cloud Services" && (
                                                 <>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={cloudservice} alt="cloudservice-img"/>
-                                                            <p>CLOUD SERVICES</p>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                    <img src="https://i.ibb.co/G38zPXn/what-is-amazon-web-services-aws-Photo-Room-png-Photo-Room.png" alt="aws-img"/>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                  <img src="https://i.ibb.co/mRd5cmB/hero16-9-machinelearning-portefolio.png" alt="gpu-img"/>
                                                         </AdditionalCard>
-                                                        <AdditionalCard>
+                                                        <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
                                                             <img src={azure} alt="azure-img"/>
-                                                            <p>AZURE SERVICES</p>
-                                                        </AdditionalCard>
-                                                    </Row>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src="https://i.ibb.co/G38zPXn/what-is-amazon-web-services-aws-Photo-Room-png-Photo-Room.png" alt="aws-img"/>
-                                                            <p>AWS SERVICES</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src="https://i.ibb.co/mRd5cmB/hero16-9-machinelearning-portefolio.png" alt="gpu-img"/>
-                                                            <p>GPU SERVICE DEVELOPMENT</p>
-                                                        </AdditionalCard>
-                                                    </Row>
+                                                   </AdditionalCard>
+                                                   </AdditionalCard>
                                                 </>
-                                            )}
-                                            {service.name === "Data Engineering" && (
+                                            )
+                                            }
+                                            {
+                                            service.name === "Data Engineering" && (
                                                 <>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={dataeng} alt="data-eng-img"/>
-                                                            <p>DATA ENGINEERING</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={datastore} alt="data-storage-img"/>
-                                                            <p>DATA STORAGE</p>
-                                                        </AdditionalCard>
-                                                    </Row>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={dataprocess} alt="data-process-img"/>
-                                                            <p>DATA PROCESSING</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={datadoc} alt="data-document-img"/>
-                                                            <p>DATA DOCUMENTATION</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={dataint} alt="data-intergration-img"/>
-                                                            <p>DATA INTEGRATION</p>
-                                                        </AdditionalCard>
-                                                    </Row>
+                                           
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={datastore} alt="data-storage-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={dataprocess} alt="data-process-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={datadoc} alt="data-document-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={dataint} alt="data-intergration-img"/>
+                                                    </AdditionalCard>
                                                 </>
-                                            )}
-                                            {service.name === "AI / ML" && (
+                                            )
+                                            }
+                                            {
+                                            service.name === "AI / ML" && (
                                                 <>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={dataScience} alt="data-eng-img"/>
-                                                            <p>AI / ML</p>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src="https://i.ibb.co/LNzCRNh/1698535.png" alt="data-storage-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src="https://i.ibb.co/DWshj53/8637099.png" alt="data-process-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src='https://i.ibb.co/G7m1hqH/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f686f72697a6f6e74.png' alt="data-document-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        
                                                         </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src="https://i.ibb.co/LNzCRNh/1698535.png" alt="data-storage-img"/>
-                                                            <p>CHATBOT</p>
-                                                        </AdditionalCard>
-                                                    </Row>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src="https://i.ibb.co/DWshj53/8637099.png" alt="data-process-img"/>
-                                                            <p>MACHINE LEARNING</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src='https://i.ibb.co/G7m1hqH/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f686f72697a6f6e74.png' alt="data-document-img"/>
-                                                            <p>TENSORFLOW</p>
-                                                        </AdditionalCard>
-                                                    </Row>
                                                 </>
-                                            )}
-                                            {service.name === "mvc" && (
+                                            )
+                                            }
+                                            {
+                                            service.name === "mvc" && (
                                                 <>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={angular} alt="angular-img"/>
-                                                            <p>ANGULAR JS</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={nodejs} alt="nodejs-img"/>
-                                                            <p>NODE JS</p>
-                                                        </AdditionalCard>
-                                                    </Row>
-                                                    <Row>
-                                                        <AdditionalCard>
-                                                            <img src={vue} alt="vue-img"/>
-                                                            <p>VUE JS</p>
-                                                        </AdditionalCard>
-                                                        <AdditionalCard>
-                                                            <img src={reactjs} alt="reactjs-img"/>
-                                                            <p>REACT JS</p>
-                                                        </AdditionalCard>
-                                                    </Row>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={angular} alt="angular-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={nodejs} alt="nodejs-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={vue} alt="vue-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        <img src={reactjs} alt="reactjs-img"/>
+                                                    </AdditionalCard>
+                                                    <AdditionalCard onMouseEnter={handleAdditionalCardMouseEnter} onMouseLeave={handleAdditionalCardMouseLeave}>
+                                                        
+                                                    </AdditionalCard>
                                                 </>
-                                            )}
+                                            )
+                                            }
                                         </AdditionalCardContainer>
                                     </AdditionalInfo>
                                 )}
@@ -244,20 +213,20 @@ const StyledCarousel = styled(Carousel)`
 
 const Card = styled.div`
     width: 100%;
-    height: auto;
+    height:  350;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     box-shadow: 0px 0px 5px lightgrey;
     border-radius: 10px;
     padding: 10px;
     margin: 20px 10px;
     cursor: pointer;
     position: relative;
-    transition: transform 0.5s; 
+    transition: transform 0.3s; 
 
     &:hover {
-        transform: rotateY(360deg);
+        
+        transform: scale(1.1);
     }
 `;
 
@@ -306,7 +275,7 @@ const Image = styled.div`
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: wrap;
         border-radius: 10px;
     }
 `;
@@ -328,65 +297,37 @@ const ServiceName = styled.p`
 
 const AdditionalInfo = styled.div`
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 0%; 
+    left: 100px;
+    display: grid;
+flex-direction: row-reverse;
+justify-content: space-between;
     padding: 25px;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+ 
 `;
 
 const AdditionalCardContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: center;
+flex-direction: row-reverse;
     width: 100%;
+    align-content: space-around;
+    display: flex;
+    flex-direction: row-reverse;
+
 `;
 
 const AdditionalCard = styled.div`
-    width: 90%;
-    height: 80px; /* Decreased height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px 0; /* Decreased margin */
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-        transform: scale(1.05);
-    }
-
-    img {
-        width: 40px; /* Decreased image size */
-        height: 40px; /* Decreased image size */
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 5px; /* Decreased margin */
-    }
-
-    p {
-        margin: 0;
-        font-size: 16px; /* Decreased font size */
-        color: #fff;
-        text-align: center;
-    }
-`;
-
-const Row = styled.div`
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    height: 100%;
+    align:  top;
+display: inline-block;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    cursor: cursor;
+    img {
+        width: 350%
+        height: 300%; 
+    }
+
 `;
 
