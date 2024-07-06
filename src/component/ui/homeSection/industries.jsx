@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Industries = () => {
     return (
-        <main className="bg-gradient-to-r from-purple-500 to-indigo-400">
+        <main className="bg-gradient-to-r from-purple-500 to-indigo-400 opacity-90">
 
             <Section>
                 <Wrapper>
@@ -107,6 +107,7 @@ const Card = styled.div`
    justify-content: center;
    align-items: center;
 
+box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
    p{
     width:70%;
     font-weight: bold;

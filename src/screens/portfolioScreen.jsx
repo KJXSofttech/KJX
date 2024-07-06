@@ -9,7 +9,7 @@ import ImageSlider from "../component/ui/services/Components/ProjectSlider"
 const PortFolio = () => {
     return (
         <>
-            <HeroPage img={portfolio} c=" Responsive Web Design " h="Next Gen" br="Beside Professional Excellence!" p="We at kjxsofttech aim to deliver the best of our services with the most authentic approach. This has not only helped us in creating an excellent portfolio for us but helped in serving amazing clients as well." />
+            <HeroPage img={portfolio} c=" Responsive Web Design " h="Next Gen" br="Beside Professional Excellence!" p="We at KJXSOFTTECH aim to deliver the best of our services with the most authentic approach. This has not only helped us in creating an excellent portfolio for us but helped in serving amazing clients as well." />
             <Portfolio />
             {/* <ContactSection /> */}
 

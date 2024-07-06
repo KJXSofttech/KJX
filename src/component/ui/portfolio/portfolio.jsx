@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import data from "../../../project.json"
 import axios from "axios";
 import ImageSlider from "../services/Components/ProjectSlider";
 import Dot from "../../../assets/dot-prtrn.png"
@@ -79,7 +78,7 @@ const Div = styled.div`
         ${Over}{
     transition: all 560ms;
         opacity: 1;
-        visibility: visible;
+        visibility: hidden;
     }
 `
 
@@ -94,7 +93,7 @@ const HoldCard = styled.div`
 const Card = styled.img`
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 
 
 `
@@ -179,7 +178,7 @@ const Section = styled.section`
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:20px 0px;
+    padding:100px 50px;
     
     color:#006400;
 `

@@ -1,8 +1,6 @@
 import React  from "react"
 import styled from "styled-components"
 import img from "../../../assets/aboutus.png"
-import img1  from "../../../assets/Reg_number.jpeg"
-import img2  from "../../../assets/compNo.jpeg"
 const Welcome = () =>{
     return(
         <Section>
@@ -17,20 +15,17 @@ const Welcome = () =>{
                         <Image>
                             <img src={img}/>
                         </Image>
+                        
                         <Text2>
                             <H2>Our <span>Story</span> </H2>
                             <P>
-                            "At KJX SoftTech, we specialize in catalyzing rapid business growth, particularly in the digital realm. Our commitment to transparency, ethical values, and customer-centric approach sets us apart in the software development industry."
+At KJXSOFTTECH, we specialize in driving rapid business growth in the digital realm through advanced technologies like AI, ML, Data Science, and Big Data. Our commitment to transparency, ethical values, and a customer-centric approach distinguishes us in the software development industry.
                             </P>
-                            <P> "With a dedicated team of highly-trained professionals, we empower organizations with modern technologies, accelerating their journey to success. As a forward-thinking company, we take pride in delivering top-notch web and mobile solutions to businesses of all sizes, consistently driving client satisfaction and overall economic progress." </P>
-                            <P> "Let us fuel your brand's digital evolution with our unwavering dedication, expertise, and exceptional services."
+                            <P> With a dedicated team of professionals, we empower organizations with modern technological solutions, accelerating their journey to success. We pride ourselves on delivering high-quality web and mobile applications that enhance client satisfaction and drive economic progress.</P>
+                            <P> Let us propel your brand's digital evolution with our expertise and unwavering dedication, ensuring exceptional service and impactful results.
 </P>
                         </Text2>
                     </HolderTwo>
-                        <image>
-                            <img src={img1} alt="" />
-                            <img src={img2} alt="" />
-                        </image>
                 </Holder>
             </Wrapper>
         </Section>
@@ -88,16 +83,19 @@ const H2 = styled.h1`
     }
 `
 
-const P = styled.p`
-    font-size: 16px;
-    font-weight: normal;
-    color:rgba(000,000,000,90%);
 
-    @media (min-width:766px){
-        width:100%;
-        word-break: break-all;
-    }
-`
+const P = styled.p`
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 10px; /* Add margin-bottom to separate paragraphs */
+
+  @media (min-width: 766px) {
+    width: 100%;
+    word-break: break-word;
+  }
+`;
+
 
 const H1 = styled.h1`
     margin:0;

@@ -17,9 +17,9 @@ import { red } from "@mui/material/colors"
 
 const FooterSection = () => {
     return (
-        <div>
-            <div class="bg-white -mt-12 -mb-5 bg-gradient-to-t from-teal-700 to-emerald-100">
-                <div class="mx-auto max-w-7xl px-2 lg:px-2">
+        <div class="bg-gradient-to-b from-gray-500 to-gray-300  opacity-90">
+            <div >
+                <div class=" max-w-9xl px-2 lg:px-2">
                     <div class="mx-auto mt-16 max-w-2xl  sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
 
                         <div class="p-8 sm:p-10 lg:flex-auto ">
@@ -71,7 +71,7 @@ const FooterSection = () => {
                                     <img src={logo} />
 
                                     <p class="ml-1 text-lg leading-2 text-black">WE BELIEVE IN MAXIMIZING THE OUTPUT</p>
-                                    <div class="flex sm:justify-center space-x-6 mt-5 mb-6">
+                                    <div class="flex sm:justify-center space-x-6 mt-1 mb-1">
                                         <a href="https://www.facebook.com/KJXSOFTTECH2020" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-500 bg-white p-2 rounded-lg">
                                             <svg class="h-4.5 w-5" fill="currentColor" viewBox="1.5 2 21 21" aria-hidden="true">
                                                 <path fill-rule="evenodd"
@@ -99,13 +99,16 @@ const FooterSection = () => {
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
 
                     </div>
                 </div>
             </div>
 
+                    <div class="flex  gap-x-0 mt-1 ">
+                         <div class="h-px flex-auto bg-gray-100"></div>
+                    </div>
         </div>
     )
 
@@ -266,7 +269,7 @@ const Wrapper = styled.div`
 
 const Footer = styled.footer`
     width:100%;
-    background-image:url(${footer});
+    background-color:
     background-repeat:no-repeat;
     background-size:cover;
     

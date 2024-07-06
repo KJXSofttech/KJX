@@ -19,7 +19,7 @@ const KeyValues = () =>{
                             <img src={idea} alt="" />
                             <Span>
                                 <h1>Innovation in Idea</h1>
-                                <p>Additionally, innovation must be a brand-new concept that gives a company a competitive edge. Our team's objective is to contribute creative solutions so your business can benefit from cutting-edge technology as well. At KJX SoftTech, we have the ideal individuals who can provide your company with creative suggestions using cutting-edge technologies.</p>
+                                <p>Additionally, innovation must be a brand-new concept that gives a company a competitive edge. Our team's objective is to contribute creative solutions so your business can benefit from cutting-edge technology as well. At KJXSOFTTECH, we have the ideal individuals who can provide your company with creative suggestions using cutting-edge technologies.</p>
                             </Span>
                        </Card>
                        <Card>

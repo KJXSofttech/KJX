@@ -5,7 +5,7 @@ import img from "../../../assets/fixed.png"
 import img1 from "../../../assets/hourly.png"
 import img2 from "../../../assets/contract.png"
 import AI_img from "../../../assets/machine.png"
-import enterprise from "../../../assets/erp.png"
+import enterprise from "../../../assets//otherImage/data_science.png"
 import UIUX from "../../../assets/uiux.png"
 import dataVisualization from "../../../assets/data_visualisation.png"
 import IOT from "../../../assets/cloud.png"
@@ -34,7 +34,7 @@ const Service = () => {
                             <Hold >
                                 <Card className="group  bg-white ring-1 ring-slate-900/5 shadow-lg  hover:bg-sky-500 hover:ring-sky-500   ">
                                     <img src={AI_img} />
-                                    <span className="text-slate-900 ">Machine Learning/AI</span>
+                                    <span className="text-slate-900 ">Machine Learning And Data Science</span>
                                 </Card>
                                 <Card className=" group  bg-white ring-1 ring-slate-900/5 shadow-lg  hover:bg-sky-500 hover:ring-sky-500   ">
                                     <img src={IOT} />
@@ -44,7 +44,7 @@ const Service = () => {
                             <Hold>
                                 <Card className=" group  bg-white ring-1 ring-slate-900/5 shadow-lg  hover:bg-sky-500 hover:ring-sky-500  ">
                                     <img src={enterprise} />
-                                    <span className="text-slate-900 ">Solution & ERP Design</span>
+                                    <span className="text-slate-900 ">AI</span>
                                 </Card>
                                 <Card className=" group  bg-white ring-1 ring-slate-900/5 shadow-lg  hover:bg-sky-500 hover:ring-sky-500  ">
                                     <img src={devops} />
@@ -143,8 +143,14 @@ const Card = styled.div`
         text-align:center;
         font-weight:500;
         margin-top:-20px
-    }
-
+    }  
+    
+    &:hover {
+    background: linear-gradient(to bottom, #CCCCCC, #FFFFFF);
+    transform: scale(1.1); /* Corrected syntax for transform */
+    cursor: pointer;
+    
+    box-shadow: 5px 5px 5px gray;
   
 `
 

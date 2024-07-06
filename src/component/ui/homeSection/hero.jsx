@@ -12,30 +12,25 @@ import { useState } from "react";
 import Typewriter from "../../../Animation/TypingText";
 import ReactTyped from "react-typed";
 
-
-
-
 const data = [
-
     {
-        h1: "Data Science / AI / ML",
+        h1: "DATA SCIENCE / AI / ML",
         br: "",
-        span: "delivers extraordinary outcomes.",
+        span: "DELIVERS EXTRAORDINARY OUTCOMES.",
         image: img2
     },
     {
-        h1: "Big Data + Cloud",
+        h1: "BIG DATA + CLOUD",
         br: "",
-        span: "Striving for excellence",
+        span: "STRIVING FOR EXCELLENCE",
         image: img3
     },
     {
-        h1: "Web Designing , App Development, Graphic Designing",
-        span: "a little uniquely",
+        h1: "WEB DESIGNING , APP DEVELOPMENT, GRAPHIC DESIGNING",
+        span: "A LITTLE UNIQUELY",
         image: img
-    },
+    }
 ];
-
 const SimpleSlider = () => {
 
     const [loading, setLoading] = useState(false)
@@ -84,7 +79,7 @@ const SimpleSlider = () => {
                                             {/* <Typewriter text={props.h1} delay={100} /> */}
                                             <br /> {props.br}
                                         </H1>
-                                        <Span className="text-white">{props.span}</Span>
+                                        <Span className="text-white ">{props.span}</Span>
                                         <Line className="text-white" />
                                         <P className="text-white">
                                             {props.p}
@@ -105,12 +100,14 @@ const SimpleSlider = () => {
 export default SimpleSlider;
 
 const Span = styled.span`
-    font-size:30px;
+    font-size:25px;
     font-weight:normal;
     margin-bottom:0;
 
+    color: #333333;
     @media (min-width:990px){
-        font-size:45px;
+        font-size:27px;
+        font-weight: bold;
     }
 `
 
@@ -122,7 +119,7 @@ const Line = styled.div`
 
 const Holder = styled.div`
     width:100%;
-
+    
     @media (min-width:767px){
         width:90%;
     }
@@ -139,7 +136,7 @@ const Image = styled.img`
     width:100%;
     min-height:300px;
     object-fit:contain;
-
+    
     @media (min-width:767px){
         width:100%;
         height:400px;
@@ -200,7 +197,8 @@ const Wrapper = styled.div`
     display:flex;
     justify-content:center;
     align-items:center; 
-    color:#000;
+    color:#0d9488;
+    
 `
 
 const Section = styled.section`
@@ -208,7 +206,10 @@ const Section = styled.section`
     display:flex;
     justify-content:center;
     align-items:center;
-    
+    background: linear-gradient(to bottom, #dcdcdc, #708090);
+
+
+
 
     @media (min-width:990px){
         padding:30px 0px;

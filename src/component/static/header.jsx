@@ -933,7 +933,7 @@ const Buttons = styled(Link)`
     color:#fff;
     font-size: large;
     font-weight:bold;
-    background:linear-gradient(to right, #006400,#0064009e);
+    background:linear-gradient(to right, #009400,#0064009e);
     box-shadow: 0px 0px 2px 5px #ebebeb;
     cursor: pointer;
     margin-left: 20px;
@@ -942,6 +942,7 @@ const Buttons = styled(Link)`
     justify-content:center ;
     align-items: center;
 
+    
     &:active {
         color: #ff6d03;
     }
@@ -955,12 +956,19 @@ const Button = styled(Link)`
     border-radius: 50px;
     color:#fff;
     font-weight:bold;
-    background:linear-gradient(to right, #006400,#0064009e);
+    background: linear-gradient(to right, #708090  , #444444);
+
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover{
+    
+    transition: opacity 1.5s ease-in-out;
+    background: linear-gradient(to right, #800000 , #BC8F8F);
+
+    }
 `
 
 const Menu = styled.div`
@@ -1083,7 +1091,7 @@ const Navs = styled.ul`
         align-items:center;
         list-style:none;
         font-weight:bold;
-
+    
         div{
             display:flex;
             flex-direction:column;

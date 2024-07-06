@@ -10,13 +10,13 @@ const Career = () => {
         {
             id: 1,
             title: "Flexible Working",
-            discrp: "We, at Kjxsofttech, believe that now is the perfect time to be productive and that is why we offer flexible working hours to give our team a comfortable yet productive zone.",
+            discrp: "We, at KJXSOFTTECH, believe that now is the perfect time to be productive and that is why we offer flexible working hours to give our team a comfortable yet productive zone.",
             image: img
         },
         {
             id: 2,
             title: "Special Leave",
-            discrp: "This is something on which we can flex! Kjxsofttech understands how important career growth is and hence we assure positive career growth.",
+            discrp: "This is something on which we can flex! KJXSOFTTECH understands how important career growth is and hence we assure positive career growth.",
             image: img1
         },
         {
@@ -33,9 +33,9 @@ const Career = () => {
                 <Title className='text-cyan-700'>Career</Title>
                 <Holder>
                     <Text>
-                        <H1>Empower Your Future With Kjxsofttech</H1>
+                        <H1>Empower Your Future With KJXSOFTTECH</H1>
                         <P>
-                            Kjxsofttech technologies help in empowering the future of each individual that is connected with us and make sure they don't stop until they are proud of themselves. We assure a great team with creative thinkers. Our fun and productive work culture not only welcomes new ideas but believes in fair execution as well.
+                        KJXSOFTTECH technologies help in empowering the future of each individual that is connected with us and make sure they don't stop until they are proud of themselves. We assure a great team with creative thinkers. Our fun and productive work culture not only welcomes new ideas but believes in fair execution as well.
                         </P>
                     </Text>
                     <Cards>

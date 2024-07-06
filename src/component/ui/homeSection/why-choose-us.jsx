@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
     return (
         <Section>
             <Wrapper>
-                <Title className='text-cyan-600'>Why KJX SoftTech</Title>
+                <Title className='text-cyan-600'>Why KJXSOFTTECH</Title>
                 <Holder>
 
                     <HolderTwo>
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
                                 <div className=" border-slate-400 border-solid border  bg-cover shadow-md">
                                     <img className="mx-auto bg-cover h-80 transform transition duration-500 hover:scale-110" src={fastService} alt="" />
                                 </div>
-                                <div className=" border-slate-400 border-solid border px-8 mx-8  bg-slate-300 text-center p-6 shadow-md">
+                                <div className="border-gray-400 px-8 mx-8 bg-indigo-100 text-center p-6 shadow-md">
                                     <h5 className="font-semibold">Fast service</h5>
                                     <p>We are committed to completing projects as quickly and accurately as possible.</p>
                                 </div>
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
                                 <div className=" border-slate-400 border-solid border bg-auto bg-no-repeat bg-center shadow-md">
                                     <img className="mx-auto bg-cover h-80 transform transition duration-500 hover:scale-110" src={pocketFriendly} alt="" />
                                 </div>
-                                <div className=" border-slate-400 border-solid border px-8 mx-8 bg-slate-300 text-center p-6 shadow-md">
+                                <div className="border-gray-400 px-8 mx-8 bg-indigo-100 text-center p-6 shadow-md">
                                     <h5 className="font-semibold">Pocket-friendly</h5>
                                     <p>We offer the greatest service at a price that is reasonable.</p>
 
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
                                 <div className=" border-slate-400 border-solid border shadow-md">
                                     <img className="bg-cover h-80 transform transition duration-500 hover:scale-110" src={globalService} alt="" />
                                 </div>
-                                <div className=" border-slate-400 border-solid border px-8 mx-8 bg-slate-300 text-center p-6 shadow-md">
+                                <div className="border-gray-400 px-8 mx-8 bg-indigo-100 text-center p-6 shadow-md">
                                     <h5 className="font-semibold">Global Enterprise Development</h5>
                                     <p>Our focus is on advancing your business on a worldwide scale.</p>
 
@@ -136,7 +136,6 @@ const HolderTwo = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
     @media (min-width:766px){
         width:100%;
     }   
