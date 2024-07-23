@@ -18,17 +18,6 @@ const data = [
         br: "",
         span: "DELIVERS EXTRAORDINARY OUTCOMES.",
         image: img2
-    },
-    {
-        h1: "BIG DATA + CLOUD",
-        br: "",
-        span: "STRIVING FOR EXCELLENCE",
-        image: img3
-    },
-    {
-        h1: "WEB DESIGNING , APP DEVELOPMENT, GRAPHIC DESIGNING",
-        span: "A LITTLE UNIQUELY",
-        image: img
     }
 ];
 const SimpleSlider = () => {
