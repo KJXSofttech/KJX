@@ -681,7 +681,7 @@ const Header = () => {
                     <Navs>
                         <Nav to={"/"} darkMode={darkMode}>Home</Nav>
                         <div>
-                            <Nav4 to={"/#"} darkMode={darkMode}>Company</Nav4>
+                            <Nav4 to={"/#"} darkMode={darkMode}>mpany</Nav4>
                             <div className="drop" style={{ padding: 10, marginTop: -10 }}>
                                 <p><a href={"/aboutus"}>AboutUs</a></p>
                                 <p className="my-0"><a href={"/work-environments"}>Work Environment</a></p>
