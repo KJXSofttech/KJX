@@ -681,14 +681,14 @@ const Header = () => {
                     <Navs>
                         <Nav to={"/"} darkMode={darkMode}>Home</Nav>
                         <div>
-                            <Nav4 to={"/#"} darkMode={darkMode}>mpany</Nav4>
+                            <Nav4 to={"/#"} darkMode={darkMode}>Company</Nav4>
                             <div className="drop" style={{ padding: 10, marginTop: -10 }}>
                                 <p><a href={"/aboutus"}>AboutUs</a></p>
                                 <p className="my-0"><a href={"/work-environments"}>Work Environment</a></p>
                             </div>
                         </div>
                         <Nav to={"/portfolio"} darkMode={darkMode}>Portfolio</Nav>
-                        <Nav to={"/careers"} darkMode={darkMode}>Careers</Nav>
+                        <Nav to={"/careers"} darkMode={darkMode}>Products</Nav>
                         <Nav to={"/services"} darkMode={darkMode}>Services</Nav>
                         <Button to={"/contactus"} darkMode={darkMode}>Contact Us</Button>
                         <DarkModeButton darkMode={darkMode} onClick={toggleDarkMode}>
@@ -727,7 +727,7 @@ const Header = () => {
                                             </div>
                                         </div>
                                         <Li to={"/portfolio"} onClick={() => setToggol(!toggol)}>Portfolio</Li>
-                                        <Li to={"/careers"} onClick={() => setToggol(!toggol)}>Careers</Li>
+                                        <Li to={"/careers"} onClick={() => setToggol(!toggol)}>Products-</Li>
                                         <Li to={"/services"} onClick={() => setToggol(!toggol)}>Services</Li>
                                         <Li to={"/contactus"} onClick={() => setToggol(!toggol)}>Contact Us</Li>
                                     </Div>
