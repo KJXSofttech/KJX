@@ -25,7 +25,6 @@ const HomeScreen = () => {
             {/* <Latest/> */}
             <Service />
             <Industries />
-            <Why_Choose_Us />
 
 
 

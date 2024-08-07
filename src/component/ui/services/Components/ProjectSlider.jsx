@@ -62,6 +62,7 @@ const ImageSlider = () => {
       image: RailkafeImage,
       onClick: "https://railkafe.com/",
     },
+    
   ];
 
   return (
@@ -211,8 +212,13 @@ const PrevArrow = styled.button`
   cursor: pointer;
   
   img {
-    width: 70px; /* Adjust arrow size */
+    width: 60px; /* Adjust arrow size */
     height: 40px;
+  }
+          @media (max-width: 768px) {
+    margin-left: 59px; /* Add margin for mobile view */
+        width: 20px; /* Adjust arrow size */
+    height: 20px;
   }
 `;
 
@@ -226,8 +232,13 @@ const NextArrow = styled.button`
   cursor: pointer;
 
   img {
-    width: 70px; /* Adjust arrow size */
+    width: 60px; /* Adjust arrow size */
     height: 40px;
+  }
+      @media (max-width: 768px) {
+    margin-right: 45px; /* Add margin for mobile view */
+            width: 20px; /* Adjust arrow size */
+    height: 20px;
   }
 `;
 

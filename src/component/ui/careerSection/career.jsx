@@ -1,149 +1,260 @@
 import React from 'react';
 import styled from 'styled-components';
-import botImage from '../../../assets/bot.gif';
-import ImageSlider from '../services/Components/ProjectSlider'; // Ensure this path is correct
+import botImage from '../../../assets/chatbot1.gif'; // This remains unchanged
 import animation from '../../../assets/animation.gif';
-import bot1 from '../../../assets/bot1.png';
-import bot2 from '../../../assets/bot2.png';
-import bot3 from '../../../assets/bot44.png';
-import bot4 from '../../../assets/bot4.png';
-import gif from '../../../assets/bots.gif';
-
-const Products = () => {
-    return (
-        <Section>
-            <Wrapper1>
-                <Heading>
-                    <Title>Meet Our Bots</Title>
-                </Heading>
-                <GifContainer>
-                    <AImage src={gif} alt="Animation" />
-                </GifContainer>
-                <ContentHolder>
-                    <Text>
-                        <P>
-                            At KJXSOFTTECH, we offer premier solutions that redefine industry standards. Our products are crafted to address the unique challenges of modern enterprises, delivering innovative technology and exceptional service that set us apart. Discover how our tailored solutions can drive success and elevate your business to new heights. Our expertise extends into the realms of Artificial Intelligence (AI), Machine Learning (ML), and Data Science. We leverage these advanced technologies to offer solutions that enhance data-driven decision-making, automate complex processes, and unlock new insights. By integrating AI and ML into our services, we provide cutting-edge tools that help businesses stay ahead of the curve and maximize their potential.
-                        </P>
-                    </Text>
-                </ContentHolder>
-            </Wrapper1>
-            <Wrapper>
-                <Holder>
-                    <BotSpecialization>
-                        <Text>
-                            <H1>Specialization in Bots</H1>
-                            <P>
-                                At KJXSOFTTECH, we are also at the forefront of bot technology. Our bot solutions are designed to automate tasks, enhance customer interactions, and streamline business processes. With expertise in developing advanced chatbots and automated systems, we offer solutions that can be integrated across various platforms to improve efficiency and user engagement.
-                            </P>
-                        </Text>
-                        <ImageContainer>
-                            <GalleryImage1 src={botImage} alt="Bot Specialization" />
-                        </ImageContainer>
-                    </BotSpecialization>
-                    <AnimationSection>
-                        <AImage src={animation} alt="Animation" />
-                    </AnimationSection>
-                    <SliderTitle>Here Are Some of Our Recent Projects:</SliderTitle>
-                    <ImageSlider />
-                </Holder>
-            </Wrapper>
-        </Section>
-    );
-};
-
-export default Products;
+import rag from '../../../assets/flow.png';
+import shopeasy from '../../../assets/Shopeasy.mp4';
+import kjxsofttech from '../../../assets/kjxsofttech.mp4';
+import junkbazar from '../../../assets/junkbazar.mp4';
+import asktomentor from '../../../assets/asktomentor.mp4';
 
 // Styled components
-const P = styled.p`
-    font-size: 12px;
-    color: #555;
-    margin: 8px 0;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-    @media (min-width: 768px) {
-        font-size: 14px;
-        margin: 12px 0;
-    }
-`;
-
-const H1 = styled.h1`
-    font-size: 18px;
-    color: #004d00;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    @media (min-width: 768px) {
-        font-size: 22px;
-    }
-    @media (min-width: 1024px) {
-        font-size: 30px;
-    }
-`;
-
-const Text = styled.div`
-    flex: 1;
-    padding-right: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    @media (min-width: 768px) {
-        flex: 2;
-        padding-right: 10px;
-        max-width: 70%;
-    }
-`;
-
-const GifContainer = styled.div`
-    background-color: #f6f6f6;
-    padding: 15px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 80%;
-`;
-
-const ImageGallery = styled.div`
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
-    border-radius: 20px;
-    padding: 20px;
-    gap: 50px;
-`;
-
-const GalleryItem = styled.div`
+const Section = styled.section`
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    padding: 0 15px;
+    color: #004d00;
+    font-family: 'Roboto', sans-serif;
+`;
+
+const Title = styled.h1`
+    font-size: 28px;
+    margin-top: 20px;
+    color: #000;
+    font-family: Poppins, 'sans-serif';
+    text-align: left;
+    font-weight: bold;
     width: 100%;
-    max-width: 200px;
-    &:hover {
-        transform: scale(1.05);
+    @media (min-width: 768px) {
+        font-size: 36px;
     }
 `;
 
-const GalleryImage = styled.img`
+const Subtitle = styled.h2`
+    font-size: 22px;
+    margin: 10px 0;
+    color: #004d00;
+    font-family: Poppins, 'sans-serif';
+    text-align: left;
+    font-weight: bold;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-    &:hover {
-        transform: scale(1.07);
+    @media (min-width: 768px) {
+        font-size: 28px;
     }
+`;
+
+const Subtitleask = styled.h2`
+    font-size: 22px;
+    margin: 10px 0;
+    margin-top:45px;
+    color: #004d00;
+    font-family: Poppins, 'sans-serif';
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    @media (min-width: 768px) {
+        font-size: 28px;
+    }
+`;
+const Subtitle1 = styled.h2`
+    font-size: 52px;
+    margin-top: -15px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    @media (min-width: 768px) {
+        font-size: 28px;
+    }
+`;
+
+const Paragraph = styled.p`
+    font-size: 14px;
+    color: #555;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+`;
+const Paragraphask = styled.p`
+    font-size: 42px;
+    margin-left:70px;
+    color: #000;
+    font-family: Poppins, 'sans-serif';
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    @media (min-width: 768px) {
+        font-size: 28px;
+    }
+`;
+const KeyFeatures = styled.ul`
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 50px;
+    width: 100%;
+    @media (min-width: 768px) {
+        padding-left: 20px;
+    }
+`;
+
+const KeyFeatures1 = styled.ul`
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 120%;
+    @media (min-width: 768px) {
+        padding-left: 20px;
+    }
+`;
+
+const FeatureItem = styled.li`
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: normal;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+`;
+const FeatureItemask = styled.li`
+    font-size: 14px;
+    color: #333;
+    margin-left:60px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+`;
+const BoldText = styled.span`
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    padding-right: 5px;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+`;
+
+const ContentHolder = styled.div`
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+`;
+
+const AnimationSection = styled.div`
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+`;
+
+const BotSection = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0;
     @media (max-width: 768px) {
-        height: auto;
+        flex-direction: column;
+    }
+`;
+
+const TextContainer = styled.div`
+    flex: 1;
+    margin-right: 20px;
+    max-width: calc(100% - 220px);
+`;
+
+const ImageContainer = styled.div`
+    flex: 0 0 auto;
+    width: auto;
+    margin-right: -500px;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+`;
+
+const VideoContainer = styled.div`
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    width: 76.5%;
+    margin-top: 50px;
+    gap: 100px; /* No extra space between videos */
+        > *:first-child {
+        margin-left: 325px; /* Adjust the margin as needed */
+    }
+`;
+
+const Video = styled.video`
+    flex: 1;
+    width: 50%;
+    max-width: 50%; /* Ensure videos span the full width */
+    height: auto;
+    object-fit: cover;
+`;
+
+const TeContainer = styled.div`
+    width: 87vw;
+    margin-top:60px;
+    height: 50px;
+    margin-left: 85px;
+    background-color: #c2c2c2;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+`;
+const ask = styled.div`
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #004d00;
+    font-family: 'Poppins', sans-serif;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 24px;
+    }
+`;
+
+const AImage = styled.img`
+    width: 170vh;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 150px;
+    max-height: 50vh;
+    object-fit: contain;
+    @media (min-width: 768px) {
+        max-height: 60vh;
+    }
+`;
+
+const bots1 = styled.img`
+    width: 150%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: contain;
+    @media (min-width: 768px) {
+        max-height: 60vh;
     }
 `;
 
 const GalleryImage1 = styled.img`
-    height: 170px;
-    width: 190px;
+    height: 350px;
+    width: auto;
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
@@ -156,155 +267,12 @@ const GalleryImage1 = styled.img`
     }
 `;
 
-const ImageTitle = styled.h3`
-    font-size: 14px;
-    margin-top: 10px;
-    color: #333;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    @media (min-width: 768px) {
-        font-size: 16px;
-    }
-    @media (min-width: 1024px) {
-        font-size: 18px;
-    }
-`;
-
-const ContentHolder = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    @media (min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-`;
-
-const Heading = styled.div`
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-    margin-bottom: 15px;
-    width: 100%;
-`;
-
-const Title = styled.h1`
-    font-size: 24px;
-    margin: 0;
-    color: #004d00;
-    font-family: 'Raleway', sans-serif;
-    @media (min-width: 768px) {
-        font-size: 28px;
-    }
-    @media (min-width: 1024px) {
-        font-size: 36px;
-    }
-`;
-
-const ImageContainer = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin-top: 15px;
-    @media (min-width: 768px) {
-        max-width: 30%;
-        margin-top: 0;
-    }
-`;
-
-const AIImage = styled.img`
-    max-width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    @media (min-width: 768px) {
-        height: 300px;
-    }
-`;
-
-const AImage = styled.img`
-    width: 100%;
-    height: auto;
-    max-height: 50vh;
-    object-fit: contain;
-    @media (min-width: 768px) {
-        max-height: 60vh;
-    }
-`;
-
-const AnimationSection = styled.div`
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    margin: 15px 0;
-    @media (min-width: 768px) {
-        margin: 20px 0;
-    }
-`;
-
-const BotSpecialization = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 15px;
-    @media (min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-top: 30px;
-    }
-`;
-
-const Holder = styled.div`
-    width: 100%;
-    align-self: center;
-    @media (min-width: 1024px) {
-        width: 95%;
-    }
-`;
-
-const Wrapper = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-`;
-
-const Wrapper1 = styled.div`
-    width: 100%;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-`;
-
-const Section = styled.section`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 10px;
-    color: #004d00;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-`;
-
 const SliderTitle = styled.h2`
     margin: 20px 0;
     font-size: 18px;
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
     color: #004d00;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     @media (min-width: 768px) {
         font-size: 20px;
     }
@@ -312,3 +280,78 @@ const SliderTitle = styled.h2`
         font-size: 24px;
     }
 `;
+
+const Products = () => {
+    return (
+        <Section>
+            <ContentHolder>
+                <Title>Empowering Business with AI-Driven Chatbots, Customized LLMs, and RAG Solutions</Title>
+                
+                <BotSection>
+                    <TextContainer>
+                        <Subtitle>Cutting-Edge Chatbot Solutions</Subtitle>
+                        <Paragraph>
+                            At KJXSofftech, we specialize in developing advanced chatbot solutions tailored to meet the unique needs of your business. Our chatbots are designed to enhance customer engagement, streamline operations, and provide 24/7 support. Whether you need a simple customer service bot or a complex AI-driven conversational agent, we have the expertise to deliver robust and scalable solutions.
+                        </Paragraph>
+
+                        <Subtitle>Key Features:</Subtitle>
+                        <KeyFeatures>
+                            <FeatureItem><BoldText>Natural Language Processing (NLP):</BoldText> Our chatbots understand and process human language naturally and effectively.</FeatureItem>
+                            <FeatureItem><BoldText>Multichannel Integration:</BoldText> Seamlessly integrate chatbots with your website, social media, and messaging platforms.</FeatureItem>
+                            <FeatureItem><BoldText>Customizable:</BoldText> Tailor the chatbot’s responses and functionalities to match your business requirements.</FeatureItem>
+                            <FeatureItem><BoldText>Analytics and Insights:</BoldText> Gain valuable insights into customer interactions and continuously improve the chatbot’s performance.</FeatureItem>
+                        </KeyFeatures>
+                        
+                        <VideoContainer>
+                            <Video src={shopeasy} alt="Shopeasy" autoPlay muted loop />
+                            <Video src={junkbazar} alt="Junkbazar" autoPlay muted loop />
+                            <Video src={asktomentor} alt="AskToMentor" autoPlay muted loop />
+                        </VideoContainer>
+                    </TextContainer>
+                    <ImageContainer>
+                        <GalleryImage1 src={botImage} alt="Bot Specialization" />
+                    </ImageContainer>
+                </BotSection>
+
+
+                <AnimationSection>
+                    <Subtitle>Customized LLMs, and RAG Solutions</Subtitle>
+                    <Paragraph>KJXSofftech leads in deploying advanced Retrieval-Augmented Generation (RAG) models, which seamlessly integrate information retrieval with text generation to deliver accurate, relevant, and context-aware responses. Additionally, we offer customized Large Language Models (LLMs) tailored to diverse industry needs, ensuring superior performance and precision across applications, from natural language understanding to complex data analysis.</Paragraph>
+
+                    <KeyFeatures>
+                        <FeatureItem><BoldText> Custom Solutions (NLP):</BoldText> Industry-Specific Applications: From healthcare to finance, we develop LLM models tailored to your industry’s unique requirements.</FeatureItem>
+                        <FeatureItem><BoldText>Integration Services:</BoldText> Seamlessly integrate LLM models with your existing systems and workflows.</FeatureItem>
+                        <FeatureItem><BoldText>Scalable and Secure:</BoldText> Our solutions are designed to scale with your business and ensure data security and privacy.</FeatureItem>
+                        <FeatureItem><BoldText>Ongoing Support and Maintenance:</BoldText> We provide continuous support to ensure your applications run smoothly and efficiently.</FeatureItem>
+                    </KeyFeatures>
+
+                    <AImage src={rag} alt="Animation" />
+                    <TeContainer>
+                        <Subtitle1>Discover Our Upcoming Products</Subtitle1>
+                    </TeContainer>
+                    <Subtitleask>AskToMentor : </Subtitleask>
+                    <Paragraphask>Benefits Of Joining US
+
+</Paragraphask>
+
+<KeyFeatures1>
+                        <FeatureItemask><BoldText> ● Broadcast your schedule or ongoing classes :</BoldText> and will reach to the matching skilled mentees by notification which will help you to gain more paid audience.</FeatureItemask>
+                        <FeatureItemask><BoldText> ● Live streaming facility </BoldText> where you can live stream your course content and get the popularity among the course
+                        signed mentees on the platform.</FeatureItemask>
+                        <FeatureItemask><BoldText>● Make a Difference:</BoldText> Use your experience and knowledge to inspire and guide the careers of motivated individuals. Help them navigate their career paths and overcome challenges.</FeatureItemask>
+                        <FeatureItemask><BoldText>● Expand Your Network:</BoldText> Connect with other professionals in your field and grow your own network. Collaborate with like-minded individuals and build valuable relationships.
+                        </FeatureItemask>
+                        <FeatureItemask><BoldText>● Share Your Expertise:</BoldText> Lead workshops, offer career advice, and share insights that can shape the future of
+                        promising talent. Your guidance can be the key to their success.</FeatureItemask>
+                        <FeatureItemask><BoldText>● Flexible Commitment:</BoldText> Mentor on your own schedule. Whether you can commit a few hours a month or more, we offer flexible opportunities to fit your availability.
+                        </FeatureItemask>
+
+                    </KeyFeatures1>
+                    <AImage src={animation} alt="Animation" />
+                </AnimationSection>
+            </ContentHolder>
+        </Section>
+    );
+};
+
+export default Products;

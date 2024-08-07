@@ -4,9 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import kafka from "../../assets/kafka.png"
-import Wordpress_Blue from "../../assets/Wordpress_Blue.png"
-import apple from "../../assets/apple.png"
-import Android from "../../assets/Android.png"
 import laravel from "../../assets/laravel.png"
 import tensorflow from "../../assets/tensorflow.png"
 import react from "../../assets/react.jpg"
@@ -14,8 +11,13 @@ import machineLearning from "../../assets/machineLearning.png"
 import python3 from "../../assets/python3.png"
 import fastAPI from "../../assets/fastAPI.png"
 import adobe from "../../assets/adobe.png"
-
-
+import langchain from "../../assets/langchain.jpg"
+import sql from "../../assets/sql.png"
+import pine from "../../assets/pine.jpg"
+import hug from "../../assets/hug.png"
+import azure from "../../assets/azure.png"
+import azureone from "../../assets/azure1.png"
+import azuretwo from "../../assets/azure2.png"
 const Platform = ({ span }) => {
 
     const [slideshowValue, setSlideshowValue] = useState(6); // Default value for slideshow
@@ -73,19 +75,32 @@ const Platform = ({ span }) => {
                             <Div>
                                 <Slider className='mb-10 mt-10' style={{ width: "100%", overFLow: "hidden", }} {...settings}>
                                     <Box>
+                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={azure} alt="" />
+                                    </Box>
+                                    <Box>
+                                        <Image  className="mx-auto transform transition duration-500 hover:scale-110 inline-block align-middle" src={azureone} alt="" />
+                                    </Box>
+                                    <Box>
+                                        <Image  className="mx-auto transform transition duration-500 hover:scale-110 inline-block align-middle" src={azuretwo} alt="" />
+                                    </Box>
+                                    <Box>
                                         <Image  className="mx-auto transform transition duration-500 hover:scale-110 inline-block align-middle" src={kafka} alt="" />
                                     </Box>
-                                    <Box>
-                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={Wordpress_Blue} alt="" />
-                                    </Box>
-                                    <Box>
-                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={apple} alt="" />
-                                    </Box>
-                                    <Box>
-                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={Android} alt="" />
-                                    </Box>
+
                                     <Box>
                                         <Image className="mx-auto transform transition duration-500 hover:scale-110" src={tensorflow} alt="" />
+                                    </Box>
+                                    <Box>
+                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={pine} alt="" />
+                                    </Box>
+                                    <Box>
+                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={langchain} alt="" />
+                                    </Box>
+                                    <Box>
+                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={hug} alt="" />
+                                    </Box>
+                                    <Box>
+                                        <Image className="mx-auto transform transition duration-500 hover:scale-110" src={sql} alt="" />
                                     </Box>
                                     <Box>
                                         <Image className="mx-auto transform transition duration-500 hover:scale-110" src={laravel} alt="" />

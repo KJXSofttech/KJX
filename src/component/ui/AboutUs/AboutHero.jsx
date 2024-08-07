@@ -7,7 +7,7 @@ const AboutHero = () => {
   return (
     <HeroPage
       img={img}
-      h="Empowering Next-Gen Excellence: Innovating with"
+      h="Empowering Next-Gen Excellence: Innovating with "
       c="AI/ML, Big Data, and Web Development."
       br=""
       p={[
