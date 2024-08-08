@@ -17,7 +17,6 @@ const ImageSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -26,8 +25,6 @@ const ImageSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
@@ -35,7 +32,6 @@ const ImageSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 0,
         },
       },
     ],
@@ -55,14 +51,28 @@ const ImageSlider = () => {
     {
       key: uuidv4(),
       image: JunkImage,
-      onClick: "https://junkbazar.com/",
+      link: "https://junkbazar.com/",
     },
     {
       key: uuidv4(),
       image: RailkafeImage,
-      onClick: "https://railkafe.com/",
+      link: "https://railkafe.com/",
     },
-    
+    {
+      key: uuidv4(),
+      image: "https://i.ibb.co/w0mP8kT/project1.png",
+      link: "https://www.travoticholidays.com/",
+    },
+    {
+      key: uuidv4(),
+      image: "https://i.ibb.co/9YJNzqC/project5.png",
+      link: "https://timesmedia.co.in/ec/public/",
+    },
+    {
+      key: uuidv4(),
+      image: "https://i.ibb.co/9G3LyrC/project7.png",
+      link: "https://jobseekers.co.nz/",
+    },
   ];
 
   return (
@@ -74,8 +84,7 @@ const ImageSlider = () => {
               <CardImage
                 src={card.image}
                 alt=""
-                className={card.key === cards[1].key ? "crop-second" : ""}
-                onClick={() => window.open(card.onClick, "_blank")}
+                onClick={() => window.open(card.link, "_blank")}
               />
               <Overlay>
                 <OverlayText>View Details</OverlayText>
@@ -95,18 +104,18 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 0 20px; /* Add padding to ensure arrows are outside of the slider */
+  padding: 0 20px; /* Padding for arrows */
 `;
 
 const StyledSlider = styled(Slider)`
   width: 100%;
-  max-width: 1200px; /* Adjust to your desired max width */
-  box-sizing: border-box; /* Prevent overflow caused by padding */
+  max-width: 1200px;
+  box-sizing: border-box;
   position: relative;
-  padding: 0 75px; /* Add padding to ensure content is cropped before arrows */
+  padding: 0 75px;
 
   .slick-slide {
-    margin: 0; /* Ensure no extra margin */
+    margin: 0;
   }
 
   .slick-prev,
@@ -114,7 +123,7 @@ const StyledSlider = styled(Slider)`
     font-size: 60px;
     line-height: 1;
     color: transparent;
-    z-index: 2; /* Ensure arrows are above the slides */
+    z-index: 2;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -123,11 +132,11 @@ const StyledSlider = styled(Slider)`
   }
 
   .slick-prev {
-    left: -80px; /* Adjust the position outside the slider */
+    left: -80px;
   }
 
   .slick-next {
-    right: -80px; /* Adjust the position outside the slider */
+    right: -80px;
   }
 
   .slick-prev:before,
@@ -135,13 +144,12 @@ const StyledSlider = styled(Slider)`
     display: none;
   }
 
-  /* Responsive styles */
   @media (max-width: 1024px) {
-    padding: 0 15px; /* Adjust padding for tablets */
+    padding: 0 15px;
   }
 
   @media (max-width: 768px) {
-    padding: 0 10px; /* Adjust padding for mobile */
+    padding: 0 10px;
   }
 `;
 
@@ -153,8 +161,8 @@ const SliderCard = styled.div`
 const CardContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 100%; /* Ensure the container takes up full height available */
-  overflow: hidden; /* Hide any content that overflows */
+  height: 100%;
+  overflow: hidden;
 `;
 
 const CardImage = styled.img`
@@ -167,12 +175,6 @@ const CardImage = styled.img`
   &:hover {
     transform: scale(1.05);
     cursor: pointer;
-  }
-
-  &.crop-second {
-    object-fit: cover;
-    height: 100%; /* Ensure image fills the container */
-    width: 100%; /* Ensure image fits within container */
   }
 `;
 
@@ -205,19 +207,20 @@ const OverlayText = styled.p`
 const PrevArrow = styled.button`
   position: absolute;
   top: 50%;
-  left: 0; /* Align with the edge of the container */
+  left: 0;
   transform: translateY(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
   
   img {
-    width: 60px; /* Adjust arrow size */
+    width: 60px;
     height: 40px;
   }
-          @media (max-width: 768px) {
-    margin-left: 59px; /* Add margin for mobile view */
-        width: 20px; /* Adjust arrow size */
+
+  @media (max-width: 768px) {
+    margin-left: 10px;
+    width: 20px;
     height: 20px;
   }
 `;
@@ -225,19 +228,20 @@ const PrevArrow = styled.button`
 const NextArrow = styled.button`
   position: absolute;
   top: 50%;
-  right: 0; /* Align with the edge of the container */
+  right: 0;
   transform: translateY(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
 
   img {
-    width: 60px; /* Adjust arrow size */
+    width: 60px;
     height: 40px;
   }
-      @media (max-width: 768px) {
-    margin-right: 45px; /* Add margin for mobile view */
-            width: 20px; /* Adjust arrow size */
+
+  @media (max-width: 768px) {
+    margin-right: 10px;
+    width: 20px;
     height: 20px;
   }
 `;

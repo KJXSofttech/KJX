@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import botImage from '../../../assets/chatbot1.gif'; // This remains unchanged
 import animation from '../../../assets/animation.gif';
-import rag from '../../../assets/flow.png';
+import atm from '../../../assets/ATM_LOGO.png';
+import rag from '../../../assets/How.png';
 import shopeasy from '../../../assets/Shopeasy.mp4';
 import kjxsofttech from '../../../assets/kjxsofttech.mp4';
 import junkbazar from '../../../assets/junkbazar.mp4';
@@ -30,6 +31,9 @@ const Title = styled.h1`
     @media (min-width: 768px) {
         font-size: 36px;
     }
+    @media (max-width: 767px) {
+        font-size: 24px; // Adjust for mobile
+    }
 `;
 
 const Subtitle = styled.h2`
@@ -42,6 +46,9 @@ const Subtitle = styled.h2`
     width: 100%;
     @media (min-width: 768px) {
         font-size: 28px;
+    }
+    @media (max-width: 767px) {
+        font-size: 18px; // Adjust for mobile
     }
 `;
 
@@ -57,19 +64,35 @@ const Subtitleask = styled.h2`
     @media (min-width: 768px) {
         font-size: 28px;
     }
+    @media (max-width: 767px) {
+        margin-top: 30px;
+        font-size: 18px; // Adjust for mobile
+    }
 `;
+
 const Subtitle1 = styled.h2`
     font-size: 52px;
-    margin-top: -15px;
     color: #000;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: bold;
     width: 100%;
+    display: flex; /* Use flexbox for vertical alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+
     @media (min-width: 768px) {
         font-size: 28px;
+        margin-top: -15px; /* Ensure no extra margin for desktop */
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px; /* Adjust font size for mobile */
+        margin-top: -5px; /* Adjust margin for mobile */
+        font-size: 15px;
     }
 `;
+
 
 const Paragraph = styled.p`
     font-size: 14px;
@@ -81,7 +104,11 @@ const Paragraph = styled.p`
     @media (min-width: 768px) {
         font-size: 16px;
     }
+    @media (max-width: 767px) {
+        font-size: 14px; // Adjust for mobile
+    }
 `;
+
 const Paragraphask = styled.p`
     font-size: 42px;
     margin-left:70px;
@@ -93,7 +120,12 @@ const Paragraphask = styled.p`
     @media (min-width: 768px) {
         font-size: 28px;
     }
+    @media (max-width: 767px) {
+        margin-left: 10px; // Adjust for mobile
+        font-size: 18px; // Adjust for mobile
+    }
 `;
+
 const KeyFeatures = styled.ul`
     list-style-type: none;
     padding-left: 0;
@@ -101,6 +133,10 @@ const KeyFeatures = styled.ul`
     width: 100%;
     @media (min-width: 768px) {
         padding-left: 20px;
+    }
+    @media (max-width: 767px) {
+        margin-left: 10px; // Adjust for mobile
+        padding-left: 10px; // Adjust for mobile
     }
 `;
 
@@ -113,6 +149,11 @@ const KeyFeatures1 = styled.ul`
     @media (min-width: 768px) {
         padding-left: 20px;
     }
+    @media (max-width: 767px) {
+        margin-left: 10px; // Adjust for mobile
+        padding-left: 10px; // Adjust for mobile
+        width: 100%; // Adjust for mobile
+    }
 `;
 
 const FeatureItem = styled.li`
@@ -123,7 +164,11 @@ const FeatureItem = styled.li`
     @media (min-width: 768px) {
         font-size: 16px;
     }
+    @media (max-width: 767px) {
+        font-size: 14px; // Adjust for mobile
+    }
 `;
+
 const FeatureItemask = styled.li`
     font-size: 14px;
     color: #333;
@@ -133,14 +178,22 @@ const FeatureItemask = styled.li`
     @media (min-width: 768px) {
         font-size: 16px;
     }
+    @media (max-width: 767px) {
+        margin-left: 10px; // Adjust for mobile
+        font-size: 14px; // Adjust for mobile
+    }
 `;
+
 const BoldText = styled.span`
     font-weight: bold;
     font-size: 14px;
     color: black;
     padding-right: 5px;
-    @media (min-width: 768px) {
+     @media (min-width: 768px) {
         font-size: 16px;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px; // Adjust for mobile
     }
 `;
 
@@ -173,6 +226,10 @@ const TextContainer = styled.div`
     flex: 1;
     margin-right: 20px;
     max-width: calc(100% - 220px);
+        @media (max-width: 768px) {
+        margin-right: 0;
+        max-width: 100%;
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -181,7 +238,9 @@ const ImageContainer = styled.div`
     margin-right: -500px;
     @media (max-width: 768px) {
         width: 100%;
+        margin-right: 0; // Adjust for mobile
     }
+
 `;
 
 const VideoContainer = styled.div`
@@ -194,6 +253,16 @@ const VideoContainer = styled.div`
         > *:first-child {
         margin-left: 325px; /* Adjust the margin as needed */
     }
+        @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center; /* Center-align videos horizontally */
+        width: 100%;
+        height: auto;
+        gap: 20px; /* Adjust spacing between videos for mobile */
+        > *:first-child {
+            margin-left: 70px; /* Remove margin on mobile */
+        }
+    }
 `;
 
 const Video = styled.video`
@@ -202,6 +271,11 @@ const Video = styled.video`
     max-width: 50%; /* Ensure videos span the full width */
     height: auto;
     object-fit: cover;
+        @media (max-width: 768px) {
+        width: 100%; /* Full width for mobile */
+        justify-content: center; /* Center-align videos horizontally */
+        margin-left: 70px;
+    }
 `;
 
 const TeContainer = styled.div`
@@ -215,7 +289,12 @@ const TeContainer = styled.div`
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
+        @media (max-width: 768px) {
+        width: 100%; /* Full width for mobile */
+        margin-left: 0; /* Adjust for mobile */
+    }
 `;
+
 const ask = styled.div`
     margin: 20px 0;
     font-size: 18px;
@@ -227,6 +306,9 @@ const ask = styled.div`
     }
     @media (min-width: 1024px) {
         font-size: 24px;
+    }
+    @media (max-width: 767px) {
+        font-size: 16px; // Adjust for mobile
     }
 `;
 
@@ -240,6 +322,11 @@ const AImage = styled.img`
     @media (min-width: 768px) {
         max-height: 60vh;
     }
+    @media (max-width: 767px) {
+        width: 100%; /* Full width for mobile */
+        margin-left: 0; /* Adjust for mobile */
+        max-height: 40vh; /* Adjust height for mobile */
+    }
 `;
 
 const bots1 = styled.img`
@@ -250,6 +337,11 @@ const bots1 = styled.img`
     @media (min-width: 768px) {
         max-height: 60vh;
     }
+    @media (max-width: 767px) {
+        width: 100%; /* Full width for mobile */
+        max-height: 40vh; /* Adjust height for mobile */
+    }
+
 `;
 
 const GalleryImage1 = styled.img`
@@ -263,9 +355,29 @@ const GalleryImage1 = styled.img`
     }
     @media (max-width: 768px) {
         height: auto;
-        width: 100%;
+        width: 100%; /* Full width for mobile */
     }
 `;
+const AtmImage = styled.img`
+    width: 100%; /* Full width of its container */
+    max-width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 25px; /* Center horizontally and adjust top margin */
+    display: block; /* Ensure margin auto works for horizontal centering */
+    max-height: 50vh; /* Adjust height to ensure it fits well */
+    object-fit: contain;
+    @media (min-width: 768px) {
+        max-height: 60vh; /* Adjust height for larger screens */
+        margin-left: 39vw;
+    }
+    @media (max-width: 767px) {
+    
+    margin-left: 7vw;
+        max-width: 90%; /* Adjust width for mobile */
+        max-height: 40vh; /* Adjust height for mobile */
+    }
+`;
+
 
 const SliderTitle = styled.h2`
     margin: 20px 0;
@@ -278,6 +390,9 @@ const SliderTitle = styled.h2`
     }
     @media (min-width: 1024px) {
         font-size: 24px;
+    }
+    @media (max-width: 767px) {
+        font-size: 16px; // Adjust for mobile
     }
 `;
 
@@ -313,7 +428,6 @@ const Products = () => {
                     </ImageContainer>
                 </BotSection>
 
-
                 <AnimationSection>
                     <Subtitle>Customized LLMs, and RAG Solutions</Subtitle>
                     <Paragraph>KJXSofftech leads in deploying advanced Retrieval-Augmented Generation (RAG) models, which seamlessly integrate information retrieval with text generation to deliver accurate, relevant, and context-aware responses. Additionally, we offer customized Large Language Models (LLMs) tailored to diverse industry needs, ensuring superior performance and precision across applications, from natural language understanding to complex data analysis.</Paragraph>
@@ -327,25 +441,20 @@ const Products = () => {
 
                     <AImage src={rag} alt="Animation" />
                     <TeContainer>
-                        <Subtitle1>Discover Our Upcoming Products</Subtitle1>
+                        <Subtitle1>Discover Our Upcoming Products </Subtitle1>
                     </TeContainer>
+                    <AtmImage src={atm} alt="ATM Logo" /> {/* Updated to use AtmImage */}
+                    
                     <Subtitleask>AskToMentor : </Subtitleask>
-                    <Paragraphask>Benefits Of Joining US
+                    <Paragraphask>Benefits Of Joining US</Paragraphask>
 
-</Paragraphask>
-
-<KeyFeatures1>
+                    <KeyFeatures1>
                         <FeatureItemask><BoldText> ● Broadcast your schedule or ongoing classes :</BoldText> and will reach to the matching skilled mentees by notification which will help you to gain more paid audience.</FeatureItemask>
-                        <FeatureItemask><BoldText> ● Live streaming facility </BoldText> where you can live stream your course content and get the popularity among the course
-                        signed mentees on the platform.</FeatureItemask>
+                        <FeatureItemask><BoldText> ● Live streaming facility </BoldText> where you can live stream your course content and get the popularity among the course signed mentees on the platform.</FeatureItemask>
                         <FeatureItemask><BoldText>● Make a Difference:</BoldText> Use your experience and knowledge to inspire and guide the careers of motivated individuals. Help them navigate their career paths and overcome challenges.</FeatureItemask>
-                        <FeatureItemask><BoldText>● Expand Your Network:</BoldText> Connect with other professionals in your field and grow your own network. Collaborate with like-minded individuals and build valuable relationships.
-                        </FeatureItemask>
-                        <FeatureItemask><BoldText>● Share Your Expertise:</BoldText> Lead workshops, offer career advice, and share insights that can shape the future of
-                        promising talent. Your guidance can be the key to their success.</FeatureItemask>
-                        <FeatureItemask><BoldText>● Flexible Commitment:</BoldText> Mentor on your own schedule. Whether you can commit a few hours a month or more, we offer flexible opportunities to fit your availability.
-                        </FeatureItemask>
-
+                        <FeatureItemask><BoldText>● Expand Your Network:</BoldText> Connect with other professionals in your field and grow your own network. Collaborate with like-minded individuals and build valuable relationships.</FeatureItemask>
+                        <FeatureItemask><BoldText>● Share Your Expertise:</BoldText> Lead workshops, offer career advice, and share insights that can shape the future of promising talent. Your guidance can be the key to their success.</FeatureItemask>
+                        <FeatureItemask><BoldText>● Flexible Commitment:</BoldText> Mentor on your own schedule. Whether you can commit a few hours a month or more, we offer flexible opportunities to fit your availability.</FeatureItemask>
                     </KeyFeatures1>
                     <AImage src={animation} alt="Animation" />
                 </AnimationSection>
