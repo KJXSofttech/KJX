@@ -32,6 +32,7 @@ const ImageSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,  // Disable arrows on mobile
         },
       },
     ],
@@ -105,6 +106,15 @@ const Container = styled.div`
   width: 100%;
   position: relative;
   padding: 0 20px; /* Padding for arrows */
+  @media (max-width: 768px) {
+   width: 170%;
+   margin-left: -70px;
+   height: 150%;
+   box-sizing: border-box;
+    }
+
+  /* Ensure container doesn't cause vertical scrolling */
+  box-sizing: border-box;
 `;
 
 const StyledSlider = styled(Slider)`
@@ -150,19 +160,28 @@ const StyledSlider = styled(Slider)`
 
   @media (max-width: 768px) {
     padding: 0 10px;
+
+    /* Hide arrows on mobile */
+    .slick-prev,
+    .slick-next {
+      display: none;
+    }
   }
 `;
 
 const SliderCard = styled.div`
   display: flex;
   justify-content: center;
+  margin: 0 5px; /* Add margin for gaps */
 `;
 
 const CardContainer = styled.div`
   position: relative;
-  width: 100%;
+  width: calc(100% - 20px); /* Full width with gaps */
   height: 100%;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 `;
 
 const CardImage = styled.img`
@@ -219,9 +238,7 @@ const PrevArrow = styled.button`
   }
 
   @media (max-width: 768px) {
-    margin-left: 10px;
-    width: 20px;
-    height: 20px;
+    display: none; /* Hide on mobile */
   }
 `;
 
@@ -240,9 +257,7 @@ const NextArrow = styled.button`
   }
 
   @media (max-width: 768px) {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
+    display: none; /* Hide on mobile */
   }
 `;
 

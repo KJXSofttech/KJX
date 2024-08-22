@@ -1,293 +1,239 @@
 {
-    "data": [
+    "data":[
         {
-            "id": "Development",
-            "name": "Django Development",
-            "link": "https://www.djangoproject.com/",
-            "image": "https://i.ibb.co/THmVzDw/Django-web-framework-Logo-wine.png",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"Django Development",
+            "link":"/services/django-development",
+            "image":"https://i.ibb.co/THmVzDw/Django-web-framework-Logo-wine.png"
         },
         {
-            "id": "Development",
-            "name": "Flask Development",
-            "link": "https://flask.palletsprojects.com/en/3.0.x/",
-            "image": "https://i.ibb.co/x3rDztp/flask-logo-icon.webp",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"Flask Development",
+            "link":"/services/python-frameworks/flask",
+            "image":"https://i.ibb.co/x3rDztp/flask-logo-icon.webp"
         },
         {
-            "id": "Development",
-            "name": "Fast Api Development",
-            "link": "https://fastapi.tiangolo.com/",
-            "image": "https://i.ibb.co/4JHs4p3/logo-teal.png",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"Fast Api Development",
+            "link":"/services/python-frameworks/fastapi",
+            "image":"https://i.ibb.co/4JHs4p3/logo-teal.png"
         },
         {
-            "id": "Development",
-            "name": "Kafka Development",
-            "link": "https://kafka.apache.org/",
-            "image": "https://i.ibb.co/C6d5XBV/kafka-icon-2048x935-cvu4503l.png",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"Kafka Development",
+            "link":"/services/python-frameworks/kafka",
+            "image":"https://i.ibb.co/C6d5XBV/kafka-icon-2048x935-cvu4503l.png"
         },
         {
-            "id": "Development",
-            "name": "Grafana Development",
-            "link": "https://grafana.com/",
-            "image": "https://i.ibb.co/bbcRRC6/600x400-Grafana-48e569d4a931c706c0b4b7910aeeefabab54a750.png",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"Grafana Development",
+            "link":"/services/python-frameworks/grafana",
+            "image":"https://i.ibb.co/bbcRRC6/600x400-Grafana-48e569d4a931c706c0b4b7910aeeefabab54a750.png"
         },
         {
-            "id": "Development",
-            "name": "Laravel Development",
-            "link": "https://laravel.com/",
-            "image": "https://i.ibb.co/JCC2vc5/laravel-brands.png",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"Laravel Development",
+            "link":"/services/php-frameworks/laravel-development",
+            "image":"https://i.ibb.co/JCC2vc5/laravel-brands.png"
         },
         {
-            "id": "Development",
-            "name": "CakePHP Development",
-            "link": "https://cakephp.org/",
-            "image": "https://i.ibb.co/bQrrNF8/cakephp-brands.png",
-            "website": "https://www.djangoproject.com/"
+            "id":"Development",
+            "name":"CakePHP Development",
+            "link":"/services/php-frameworks/cake-php-framework",
+            "image":"https://i.ibb.co/bQrrNF8/cakephp-brands.png"
         },
         {
-            "id": "Development",
-            "name": "Codeigniter Development",
-            "link": "https://codeigniter.com/",
-            "image": "https://i.ibb.co/RBHgZ6N/codeigniter.png"
+            "id":"Development",
+            "name":"Codeigniter Development",
+            "link":"/services/php-frameworks/codigniter-development",
+            "image":"https://i.ibb.co/RBHgZ6N/codeigniter.png"
         },
         {
-            "id": "Development",
-            "name": "Wordpress Development",
-            "link": "https://wordpress.com/",
-            "image": "https://i.ibb.co/YWr0YmG/Technource-wpress-page-banner-1.png"
+            "id":"Development",
+            "name":"Wordpress Development",
+            "link":"/services/php-frameworks/wordpress-development",
+            "image":"https://i.ibb.co/YWr0YmG/Technource-wpress-page-banner-1.png"
         },
         {
-            "id": "Development",
-            "name": "Shopify Development",
-            "link": "https://www.shopify.com/in",
-            "image": "https://i.ibb.co/g68pSmZ/640px-Shopify-Logo.png"
+            "id":"Development",
+            "name":"Shopify Development",
+            "link":"/services/php-frameworks/shopify-development",
+            "image":"https://i.ibb.co/g68pSmZ/640px-Shopify-Logo.png"
         },
         {
-            "id": "MVC",
-            "name": "React JS Development",
-            "link": "https://react.dev/",
-            "image": "https://i.ibb.co/WcsxFvN/react-brand.png"
+            "id":"MVC",
+            "name":"React JS Development",
+            "link":"/services/mvc-frameworks/react-js",
+            "image":"https://i.ibb.co/WcsxFvN/react-brand.png"
         },
         {
-            "id": "MVC",
-            "name": "Vue JS Development",
-            "link": "https://vuejs.org/",
-            "image": "https://i.ibb.co/MGgvvXn/vue-brand.png"
+            "id":"MVC",
+            "name":"Vue JS Development",
+            "link":"/services/mvc-frameworks/vue-js",
+            "image":"https://i.ibb.co/MGgvvXn/vue-brand.png"
         },
         {
-            "id": "MVC",
-            "name": "Angular JS Development",
-            "link": "https://angularjs.org/",
-            "image": "https://i.ibb.co/Wc5jfNY/angular-brand.png"
+            "id":"MVC",
+            "name":"Angular JS Development",
+            "link":"/services/mvc-frameworks/angular-js",
+            "image":"https://i.ibb.co/Wc5jfNY/angular-brand.png"
         },
         {
-            "id": "MVC",
-            "name": "Node JS Development",
-            "link": "https://nodejs.org/en",
-            "image": "https://i.ibb.co/3T8cmVd/node-logo-1.png"
+            "id":"MVC",
+            "name":"Node JS Development",
+            "link":"/services/mvc-frameworks/node-js",
+            "image":"https://i.ibb.co/3T8cmVd/node-logo-1.png"
         },
         {
-            "id": "App",
-            "name": "IOS Application",
-            "link": "https://developer.apple.com/ios/",
-            "image": "https://i.ibb.co/2FYpqwf/IOS-logo-svg.png"
+            "id":"App",
+            "name":"IOS Application",
+            "link":"/services/mobile-app-development/ios-application",
+            "image":"https://i.ibb.co/2FYpqwf/IOS-logo-svg.png"
         },
         {
-            "id": "App",
-            "name": "Android Application",
-            "link": "https://www.android.com/intl/en_in/",
-            "image": "https://i.ibb.co/S5DxVfJ/Android-Logo-PNG.png"
+            "id":"App",
+            "name":"Android Application",
+            "link":"/services/mobile-app-development/android-application",
+            "image":"https://i.ibb.co/S5DxVfJ/Android-Logo-PNG.png"
         },
         {
-            "id": "App",
-            "name": "React Native Application",
-            "link": "https://reactnative.dev/",
-            "image": "https://i.ibb.co/svR70pW/react-native-logo.png"
+            "id":"App",
+            "name":"React Native Application",
+            "link":"/services/mobile-app-development/react-native-application",
+            "image":"https://i.ibb.co/svR70pW/react-native-logo.png"
         },
         {
-            "id": "AI/ML",
-            "name": "Chatbot",
-            "link": "https://www.chatbot.com/",
-            "image": "https://i.ibb.co/LNzCRNh/1698535.png"
+            "id":"AI/ML",
+            "name":"Chatbot",
+            "link":"/services/ai-ml/chatbot",
+            "image":"https://i.ibb.co/LNzCRNh/1698535.png"
         },
         {
-            "id": "AI/ML",
-            "name": "Machine Learning",
-            "link": "https://www.ibm.com/topics/machine-learning",
-            "image": "https://i.ibb.co/DWshj53/8637099.png"
+            "id":"AI/ML",
+            "name":"Machine Learning",
+            "link":"/services/ai-ml/machine-learning",
+            "image":"https://i.ibb.co/DWshj53/8637099.png"
         },
         {
-            "id": "AI/ML",
-            "name": "Tensorflow",
-            "link": "https://www.tensorflow.org/",
-            "image": "https://i.ibb.co/G7m1hqH/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f686f72697a6f6e74.png"
+            "id":"AI/ML",
+            "name":"Tensorflow",
+            "link":"/services/ai-ml/tensorflow",
+            "image":"https://i.ibb.co/G7m1hqH/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f686f72697a6f6e74.png"
         },
         {
-            "id": "Api",
-            "name": "Payment API",
-            "link": "https://staxpayments.com/blog/payment-apis-how-they-work/",
-            "image": "https://i.ibb.co/yYxCSPb/pay-with-cryptocurrency-5475718-4561533.png"
+            "id":"Api",
+            "name":"Payment API",
+            "link":"/services/api-integration-services/payment-api",
+            "image":"https://i.ibb.co/yYxCSPb/pay-with-cryptocurrency-5475718-4561533.png"
         },
         {
-            "id": "Api",
-            "name": "Shipping API",
-            "link": "https://www.shipbob.com/blog/shipping-api/",
-            "image": "https://i.ibb.co/Qp9f9bp/What-is-a-shipping-API-01.png"
+            "id":"Api",
+            "name":"Shipping API",
+            "link":"/services/api-integration-services/shipping-api",
+            "image":"https://i.ibb.co/Qp9f9bp/What-is-a-shipping-API-01.png"
         },
         {
-            "id": "Api",
-            "name": "Authentication API",
-            "link": "https://www.telesign.com/",
-            "image": "https://i.ibb.co/d7zw1t8/banner.png"
+            "id":"Api",
+            "name":"Authentication API",
+            "link":"/services/api-integration-services/authentication-api",
+            "image":"https://i.ibb.co/d7zw1t8/banner.png"
         },
         {
-            "id": "Api",
-            "name": "Phone Verification API",
-            "link": "https://apilayer.com/marketplace/number_verification-api",
-            "image": "https://i.ibb.co/Cszn8yp/hero-image.png"
+            "id":"Api",
+            "name":"Phone Verification API",
+            "link":"/services/api-integration-services/phone-verification-api",
+            "image":"https://i.ibb.co/Cszn8yp/hero-image.png"
         },
         {
-            "id": "Digital Marketing",
-            "name": "SEO",
-            "link": "https://www.investopedia.com/terms/d/digital-marketing.asp",
-            "image": "https://i.ibb.co/qjBrZxP/image-seo.png"
+            "id":"Digital Marketing",
+            "name":"SEO",
+            "link":"/services/digital-marketing/seo",
+            "image":"https://i.ibb.co/qjBrZxP/image-seo.png"
         },
         {
-            "id": "Digital Marketing",
-            "name": "SMO",
-            "link": "https://www.investopedia.com/terms/d/digital-marketing.asp",
-            "image": "https://i.ibb.co/T0VjkQY/best-smo-services-company-in-india.png"
+            "id":"Digital Marketing",
+            "name":"SMO",
+            "link":"/services/digital-marketing/smo",
+            "image":"https://i.ibb.co/T0VjkQY/best-smo-services-company-in-india.png"
         },
         {
-            "id": "Digital Marketing",
-            "name": "PPC",
-            "link": "https://www.investopedia.com/terms/d/digital-marketing.asp",
-            "image": "https://i.ibb.co/180d78M/pngtree-ppc-people-for-marketing-design-png-image-6377285.png"
+            "id":"Digital Marketing",
+            "name":"PPC",
+            "link":"/services/digital-marketing/ppc",
+            "image":"https://i.ibb.co/180d78M/pngtree-ppc-people-for-marketing-design-png-image-6377285.png"
         },
         {
-            "id": "Digital Marketing",
-            "name": "ORM",
-            "link": "https://www.investopedia.com/terms/d/digital-marketing.asp",
-            "image": "https://i.ibb.co/60VSMgk/orm.png"
+            "id":"Digital Marketing",
+            "name":"ORM",
+            "link":"/services/digital-marketing/orm",
+            "image":"https://i.ibb.co/60VSMgk/orm.png"
         },
         {
-            "id": "UI/UX",
-            "name": "PSD to HTML",
-            "link": "https://www.figma.com/",
-            "image": "https://i.ibb.co/D1QGhXv/1-fb-Xbi-Qon-So-Ll-DGZbmm-E8c-Q.png"
+            "id":"UI/UX",
+            "name":"PSD to HTML",
+            "link":"/services/designing-services/psd-html-design-services",
+            "image":"https://i.ibb.co/D1QGhXv/1-fb-Xbi-Qon-So-Ll-DGZbmm-E8c-Q.png"
         },
         {
-            "id": "UI/UX",
-            "name": "Responsive Web Design",
-            "link": "https://www.figma.com/",
-            "image": "https://i.ibb.co/zJPB7Y4/4-2-responsive-web-design-picture.png"
+            "id":"UI/UX",
+            "name":"Responsive Web Design",
+            "link":"/services/designing-services/responsive-website-design",
+            "image":"https://i.ibb.co/zJPB7Y4/4-2-responsive-web-design-picture.png"
         },
         {
-            "id": "UI/UX",
-            "name": "Mobile App Design",
-            "link": "https://www.figma.com/",
-            "image": "https://i.ibb.co/fG2N1bt/tips-on-mobile-UI-design.png"
+            "id":"UI/UX",
+            "name":"Mobile App Design",
+            "link":"/services/designing-services/mobile-application-design",
+            "image":"https://i.ibb.co/fG2N1bt/tips-on-mobile-UI-design.png"
         },
         {
-            "id": "UI/UX",
-            "name": "Design Prototype",
-            "link": "https://www.figma.com/",
-            "image": "https://i.ibb.co/jzVKy5T/images.png"
+            "id":"UI/UX",
+            "name":"Design Prototype",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/jzVKy5T/images.png"
         },
         {
-            "id": "Data Engineering",
-            "name": "Data Storage",
-            "link": "https://www.mongodb.com/",
-            "image": "https://i.ibb.co/G5Bp9kW/isometric-style-illustration-of-server-data-storage-protection-vector-Photo-Room-png-Photo-Room.png"
+            "id":"Data Engineering",
+            "name":"Data Storage",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/G5Bp9kW/isometric-style-illustration-of-server-data-storage-protection-vector-Photo-Room-png-Photo-Room.png"
         },
         {
-            "id": "Data Engineering",
-            "name": "Data Processing",
-            "link": "https://www.mongodb.com/",
-            "image": "https://i.ibb.co/rsW0Zr6/161-1618188-wordpress-hosting-hd-png-download-Photo-Room-png-Photo-Room.png"
+            "id":"Data Engineering",
+            "name":"Data Processing",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/rsW0Zr6/161-1618188-wordpress-hosting-hd-png-download-Photo-Room-png-Photo-Room.png"
         },
         {
-            "id": "Data Engineering",
-            "name": "Data Documentation",
-            "link": "https://www.mongodb.com/",
-            "image": "https://i.ibb.co/3hMM9R3/pngtree-budget-financial-analyst-to-managing-or-planning-spending-money-at-checklist-png-image-50876.png"
+            "id":"Data Engineering",
+            "name":"Data Documentation",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/3hMM9R3/pngtree-budget-financial-analyst-to-managing-or-planning-spending-money-at-checklist-png-image-50876.png"
         },
         {
-            "id": "Data Engineering",
-            "name": "Data Integration",
-            "link": "https://www.mongodb.com/",
-            "image": "https://i.ibb.co/2cM98GD/data-integration-services-banner-featured.png"
+            "id":"Data Engineering",
+            "name":"Data Integration",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/2cM98GD/data-integration-services-banner-featured.png"
         },
         {
-            "id": "Cloud Service",
-            "name": "Azure Services",
-            "link": "https://azure.microsoft.com/en-in",
-            "image": "https://i.ibb.co/qDhxqwS/azure-top-band-image.png"
+            "id":"Cloud Service",
+            "name":"Azure Services",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/qDhxqwS/azure-top-band-image.png"
         },
         {
-            "id": "Cloud Service",
-            "name": "AWS Services",
-            "link": "https://aws.amazon.com/",
-            "image": "https://i.ibb.co/G38zPXn/what-is-amazon-web-services-aws-Photo-Room-png-Photo-Room.png"
+            "id":"Cloud Service",
+            "name":"AWS Services",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/G38zPXn/what-is-amazon-web-services-aws-Photo-Room-png-Photo-Room.png"
         },
         {
-            "id": "Cloud Service",
-            "name": "GPU Service",
-            "link": "https://www.techtarget.com/searchvirtualdesktop/definition/GPU-graphics-processing-unit",
-            "image": "https://i.ibb.co/mRd5cmB/hero16-9-machinelearning-portefolio.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "Cost Optimization",
-            "link": "https://cloudworkmates.com/cost-optimization/",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/business.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "DevOps",
-            "link": "https://cloudworkmates.com/devops/",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/signs.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "SAP Infra",
-            "link": "https://cloudworkmates.com/sap-on-aws/",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/sap-logo.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "Cloud Deployment",
-            "link": "https://cloudworkmates.com/deployment/",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/interface.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "Block chain, IOT",
-            "link": "https://cloudworkmates.com/#",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/security.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "Big Data, AI",
-            "link": "https://cloudworkmates.com/#",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/technology.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "Cloud Consultation",
-            "link": "https://cloudworkmates.com/cloud-consultation/",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/cloud.png"
-        },
-        {
-            "id": "Cloud Service",
-            "name": "Cloud Migration",
-            "link": "https://cloudworkmates.com/aws-migration-services-cloud-migration-to-aws/",
-            "image": "https://cloudworkmates.com/wp-content/uploads/2020/05/cloud-1.png"
+            "id":"Cloud Service",
+            "name":"GPU Service",
+            "link":"/services/designing-services/design-prototype",
+            "image":"https://i.ibb.co/mRd5cmB/hero16-9-machinelearning-portefolio.png"
         }
+
     ]
 }

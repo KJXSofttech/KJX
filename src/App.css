@@ -264,14 +264,3 @@ margin-top: 0.8em;
 .content .list label:hover{
   color: rgb(14 165 233);;
 }
-
-
-
-/* Contact Us */
-.cursor-pointer{
-   transition: all 0.3s linear;
-}
-.cursor-pointer:hover{
-  scale: 1.1;
-}
-

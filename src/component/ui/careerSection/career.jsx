@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import botImage from '../../../assets/chatbot1.gif'; // This remains unchanged
 import animation from '../../../assets/animation.gif';
 import atm from '../../../assets/ATM_LOGO.png';
-import rag from '../../../assets/How.png';
+import rag from '../../../assets/rag.png';
 import shopeasy from '../../../assets/Shopeasy.mp4';
-import kjxsofttech from '../../../assets/kjxsofttech.mp4';
 import junkbazar from '../../../assets/junkbazar.mp4';
 import asktomentor from '../../../assets/asktomentor.mp4';
 

@@ -16,20 +16,18 @@ import WatsAppSection from "../component/ui/Watsapp"
 import bckground from '../assets/otherImage/bckground.jpg'
 import styled from "styled-components"
 import FooterSection from "../component/static/FooterSection"
+import Chatbot from '../chatbot.js';
 
 const HomeScreen = () => {
     return (
         <>
+        <Chatbot/>
             <Hero />
             <Platform span="Platforms We Work With" />
             {/* <Latest/> */}
             <Service />
             <Industries />
 
-
-
-            {/* <Solution/> */}
-            {/* <Brands/> */}
             {/* <Health/>
             <Pattner/> */}
             {/* <Contact/> */}

@@ -4,12 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useAuth } from "../Admin/AuthContext"
-
-import img from "../../../assets/banner.png"
-import img2 from "../../../assets/otherImage/data_science.png"
-import img3 from "../../../assets/otherImage/BigData2.png"
+import img2 from "../../../assets/bbott.png";
 import { useState } from "react";
-import Typewriter from "../../../Animation/TypingText";
 import ReactTyped from "react-typed";
 
 const data = [

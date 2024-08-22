@@ -26,6 +26,9 @@ const Image = styled.img`
   max-width: 350px; /* Adjust as necessary */
   height: auto;
   object-fit: contain;
+  @media((max-width: 768px){
+  height: 50px;
+  }
 `
 
 const P = styled.p`
