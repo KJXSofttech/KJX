@@ -10,12 +10,18 @@ const ChatbotContainer = styled.div`
   z-index: 1000;
 `;
 
+// Define the port number directly here
+const CHATBOT_PORT = 4000;
+
 const Chatbot = () => {
+  // Use the defined port number
+  const url = `http://13.126.20.207:${CHATBOT_PORT}/`;
+
   return (
     <ChatbotContainer>
       {/* Your chatbot UI here */}
       <iframe 
-        src="http://13.126.20.207:4000/" 
+        src={url} 
         style={{ width: '500px', height: '800px', border: 'none' }}
         title="Chatbot"
       />
