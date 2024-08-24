@@ -680,13 +680,8 @@ const Header = () => {
                     <Nav to={"/"}><Logo src={logo} /></Nav>
                     <Navs>
                         <Nav to={"/"} darkMode={darkMode}>Home</Nav>
-                        <div>
-                            <Nav4 to={"/#"} darkMode={darkMode}>Company</Nav4>
-                            <div className="drop" style={{ padding: 10, marginTop: -10 }}>
                                 <p><Nav to ={"/aboutus"}>AboutUs</Nav></p>
-                                <p className="my-0"><Nav to={"/work-environments"}>Work Environment</Nav></p>
-                            </div>
-                        </div>
+                                
                         <Nav to={"/portfolio"} darkMode={darkMode}>Portfolio</Nav>
                         <Nav to={"/products"} darkMode={darkMode}>Products</Nav>
                         <Nav to={"/services"} darkMode={darkMode}>Services</Nav>
