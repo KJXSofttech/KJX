@@ -36,13 +36,13 @@ const FooterSection = () => {
                                                                                   
                                             <FaLocationDot style={{color:'#E5180E'}}/>  
                                         </Icon>
-                                        <Spans>PATNA, BIHAR, 804453</Spans>
+                                        <Spans>PATNA, BIHAR</Spans>
                                     </Holder>
                                     <Holder className="mt-1">
                                         <Icon>
                                             <FaLocationDot style={{color:'#E5180E'}} />
                                         </Icon>
-                                        <Spans> JAGATSINGHPUR , ODISHA , 754103</Spans>
+                                        <Spans> JAGATSINGHPUR , ODISHA</Spans>
                                     </Holder>
                                     <Holder className="mt-1">
                                         <Icon>
