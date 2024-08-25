@@ -15,7 +15,7 @@ const CHATBOT_PORT = 4000;
 
 const Chatbot = () => {
   // Use the defined port number
-  const url = `http://13.126.20.207:${CHATBOT_PORT}/`;
+  const url = `http://13.201.84.145:${CHATBOT_PORT}/`;
 
   return (
     <ChatbotContainer>
