@@ -21,7 +21,6 @@ import Chatbot from '../chatbot.js';
 const HomeScreen = () => {
     return (
         <>
-        <Chatbot/> 
             <Hero />
             <Platform span="Platforms We Work With" />
             {/* <Latest/> */}

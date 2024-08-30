@@ -7,7 +7,10 @@ import rag from '../../../assets/rag.png';
 import shopeasy from '../../../assets/Shopeasy.mp4';
 import junkbazar from '../../../assets/junkbazar.mp4';
 import asktomentor from '../../../assets/asktomentor.mp4';
-
+import ChatbotsSection from "./chatbotsection.js";
+import BotCapabilities from './botcapabilities.jsx';
+import AIChatbotServices from './aichatbotservices.jsx';
+import plans from '../../../assets/Plans.png'
 // Styled components
 const Section = styled.section`
     width: 100%;
@@ -50,7 +53,21 @@ const Subtitle = styled.h2`
         font-size: 18px; // Adjust for mobile
     }
 `;
-
+const Subtitleed = styled.h2`
+    font-size: 22px;
+    color: #004d00;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 27px;
+    width: 100%;
+    @media (min-width: 768px) {
+        font-size: 28px;
+    }
+    @media (max-width: 767px) {
+        font-size: 18px; // Adjust for mobile
+    }
+`;
 const Subtitleask = styled.h2`
     font-size: 22px;
     margin: 10px 0;
@@ -168,6 +185,8 @@ const FeatureItem = styled.li`
     }
 `;
 
+
+
 const FeatureItemask = styled.li`
     font-size: 14px;
     color: #333;
@@ -203,7 +222,14 @@ const ContentHolder = styled.div`
     padding: 0;
     box-sizing: border-box;
 `;
-
+const imgplans = styled.div`
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    align-items:center;
+    padding: 0;
+    box-sizing: border-box;
+`;
 const AnimationSection = styled.div`
     width: 100%;
     margin: 10px 0;
@@ -244,13 +270,13 @@ const ImageContainer = styled.div`
 
 const VideoContainer = styled.div`
     display: flex;
-    height: 400px;
+    height: 500px;
     flex-direction: row;
-    width: 76.5%;
+    width: 85.5%;
     margin-top: 50px;
     gap: 100px; /* No extra space between videos */
         > *:first-child {
-        margin-left: 325px; /* Adjust the margin as needed */
+        margin-left: 320px; /* Adjust the margin as needed */
     }
         @media (max-width: 768px) {
         flex-direction: column;
@@ -275,6 +301,22 @@ const Video = styled.video`
         justify-content: center; /* Center-align videos horizontally */
         margin-left: 70px;
     }
+`;
+
+const ImgPlansContainer = styled.div`
+    display: flex;
+    justify-content: center;  // Center horizontally
+    align-items: center;      // Center vertically (if you set a height)]
+    margin-left: 270px;
+    margin-top:70px;
+    border-radius: 8px;      // Optional: add border radius
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: add a box shadow
+`;
+
+const ImgPlansImage = styled.img`
+    max-width: 100%;  // Ensure the image is responsive
+    height: auto;     // Maintain aspect ratio
+    border-radius: 8px; // Optional: match border radius of container
 `;
 
 const TeContainer = styled.div`
@@ -378,26 +420,81 @@ const AtmImage = styled.img`
 `;
 
 
-const SliderTitle = styled.h2`
+const GridSection = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, auto); /* Two rows with auto height */
+    gap: 20px; /* Adjust spacing between items */
     margin: 20px 0;
-    font-size: 18px;
+    margin-left:
+    width: 100%;
+    aligm-items: center;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr); /* Keep two columns for tablets */
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-rows: auto; /* Adjust rows for mobile */
+    }
+`;
+
+const GridItem = styled.div`
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
+
+    /* Optional: Add styles for responsiveness */
+    @media (max-width: 768px) {
+        padding: 15px; /* Adjust padding for mobile */
+    }
+`;
+const ImageContainer5 = styled.div`
+    flex: 0 0 auto;
+    width: 50px;
+    margin-top: -50px;
+    height: 750px;
+    margin-right: -500px;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-right: 0; // Adjust for mobile
+    }
+
+`;
+const ContentHeading = styled.div`
+    font-size: 22px;
+    font-weight: bold;
     color: #004d00;
-    font-family: 'Poppins', sans-serif;
-    @media (min-width: 768px) {
-        font-size: 20px;
-    }
-    @media (min-width: 1024px) {
-        font-size: 24px;
-    }
-    @media (max-width: 767px) {
-        font-size: 16px; // Adjust for mobile
-    }
+    margin-bottom: 10px;
+`;
+
+const planstxt = styled.p`
+    font-size: 35px;
+    font-weight: bold;
+    color: #004d00;
+    margin-bottom: 10px;
+`;
+const ContentDescription = styled.div`
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
 `;
 
 const Products = () => {
     return (
         <Section>
+          <ChatbotsSection />
+
+            <VideoContainer>
+                            <Video src={shopeasy} alt="Shopeasy" autoPlay muted loop />
+                            <Video src={junkbazar} alt="Junkbazar" autoPlay muted loop />
+                            <Video src={asktomentor} alt="AskToMentor" autoPlay muted loop />
+                        </VideoContainer>
             <ContentHolder>
                 <Title>Empowering Business with AI-Driven Chatbots, Customized LLMs, and RAG Solutions</Title>
                 
@@ -416,11 +513,7 @@ const Products = () => {
                             <FeatureItem><BoldText>Analytics and Insights:</BoldText> Gain valuable insights into customer interactions and continuously improve the chatbot’s performance.</FeatureItem>
                         </KeyFeatures>
                         
-                        <VideoContainer>
-                            <Video src={shopeasy} alt="Shopeasy" autoPlay muted loop />
-                            <Video src={junkbazar} alt="Junkbazar" autoPlay muted loop />
-                            <Video src={asktomentor} alt="AskToMentor" autoPlay muted loop />
-                        </VideoContainer>
+ 
                     </TextContainer>
                     <ImageContainer>
                         <GalleryImage1 src={botImage} alt="Bot Specialization" />
@@ -439,17 +532,29 @@ const Products = () => {
                     </KeyFeatures>
 
                     <AImage src={rag} alt="Animation" />
+                    
+                  
+            <AIChatbotServices/>
+            <BotCapabilities />
+
+            <TeContainer>
+                        <Subtitle1>Our Plans </Subtitle1>
+                    </TeContainer>
+
+            <ImgPlansContainer>
+            <ImgPlansImage src={plans} alt="Plans_Image" />
+        </ImgPlansContainer>
                     <TeContainer>
                         <Subtitle1>Discover Our Upcoming Products </Subtitle1>
                     </TeContainer>
                     <AtmImage src={atm} alt="ATM Logo" /> {/* Updated to use AtmImage */}
                     
-                    <Subtitleask>AskToMentor : </Subtitleask>
+                    <Subtitleask>AskToMentor:</Subtitleask>
                     <Paragraphask>Benefits Of Joining US</Paragraphask>
 
                     <KeyFeatures1>
-                        <FeatureItemask><BoldText> ● Broadcast your schedule or ongoing classes :</BoldText> and will reach to the matching skilled mentees by notification which will help you to gain more paid audience.</FeatureItemask>
-                        <FeatureItemask><BoldText> ● Live streaming facility </BoldText> where you can live stream your course content and get the popularity among the course signed mentees on the platform.</FeatureItemask>
+                        <FeatureItemask><BoldText> ● Broadcast your schedule or ongoing classes:</BoldText> and will reach to the matching skilled mentees by notification which will help you to gain more paid audience.</FeatureItemask>
+                        <FeatureItemask><BoldText> ● Live streaming facility</BoldText> where you can live stream your course content and get the popularity among the course signed mentees on the platform.</FeatureItemask>
                         <FeatureItemask><BoldText>● Make a Difference:</BoldText> Use your experience and knowledge to inspire and guide the careers of motivated individuals. Help them navigate their career paths and overcome challenges.</FeatureItemask>
                         <FeatureItemask><BoldText>● Expand Your Network:</BoldText> Connect with other professionals in your field and grow your own network. Collaborate with like-minded individuals and build valuable relationships.</FeatureItemask>
                         <FeatureItemask><BoldText>● Share Your Expertise:</BoldText> Lead workshops, offer career advice, and share insights that can shape the future of promising talent. Your guidance can be the key to their success.</FeatureItemask>
