@@ -55,7 +55,7 @@ const HolderOne = styled.div`
 const Wrapper = styled.div`
   width: 90%;
   max-width: 1200px; /* Adjust as necessary */
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
 
@@ -68,7 +68,7 @@ const Wrapper = styled.div`
 
 const Section = styled.section`
   width: 100%;
-  min-height: 50vh;
+  
   background-color: #F9F9F9;
   color: #006400;
   padding: 20px 0;

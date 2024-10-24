@@ -359,6 +359,8 @@ const AImage = styled.img`
     margin-top: 50px;
     margin-left: 150px;
     max-height: 50vh;
+    
+    margin-bottom: 50px;
     object-fit: contain;
     @media (min-width: 768px) {
         max-height: 60vh;
@@ -488,13 +490,12 @@ const ContentDescription = styled.div`
 const Products = () => {
     return (
         <Section>
-          <ChatbotsSection />
-
+{/* 
             <VideoContainer>
                             <Video src={shopeasy} alt="Shopeasy" autoPlay muted loop />
                             <Video src={junkbazar} alt="Junkbazar" autoPlay muted loop />
                             <Video src={asktomentor} alt="AskToMentor" autoPlay muted loop />
-                        </VideoContainer>
+                        </VideoContainer> */}
             <ContentHolder>
                 <Title>Empowering Business with AI-Driven Chatbots, Customized LLMs, and RAG Solutions</Title>
                 
@@ -534,8 +535,12 @@ const Products = () => {
                     <AImage src={rag} alt="Animation" />
                     
                   
-            <AIChatbotServices/>
+            
+          
             <BotCapabilities />
+            
+            <AIChatbotServices/>
+            <ChatbotsSection />
 
             <TeContainer>
                         <Subtitle1>Our Plans </Subtitle1>

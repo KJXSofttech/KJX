@@ -17,7 +17,7 @@ import { red } from "@mui/material/colors"
 
 const FooterSection = () => {
     return (
-        <div class="bg-gradient-to-b from-gray-500 to-gray-300  opacity-90">
+        <div class="bg-gradient-to-b from-gray-500 to-gray-300  opacity-90 mt-3">
             <div >
                 <div class=" max-w-9xl px-2 lg:px-2">
                     <div class="mx-auto mt-16 max-w-2xl  sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">

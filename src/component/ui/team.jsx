@@ -177,7 +177,6 @@ const Section = styled.section`
   align-items: center;
   color: #fff;
   box-sizing: border-box;
-  padding: 20px 0px;
 
   @media (min-width: 768px) {
     padding: unset;

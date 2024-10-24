@@ -189,7 +189,6 @@ const App = () => {
       </Routes>
 
       <Footers />
-      <CopyrightPage />
       
     </Router>
   );

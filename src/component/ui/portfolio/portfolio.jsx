@@ -28,9 +28,8 @@ const Portfolio = () => {
 
 
     return (
-        <Section className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+        <Section >
             <Wrapper>
-                <Image src={Dot} alt="dot-prtrn" />
                 <Holder>
 
                     <ImageSlider />
