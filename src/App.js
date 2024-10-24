@@ -194,6 +194,19 @@ const App = () => {
       </Routes>
 
       <Footers />
+      <iframe 
+        src="http://13.233.10.177:4000/"
+        style={{
+          position: 'fixed',
+          right: '0',
+          bottom: '0',
+          width: '400px', // Adjust width as needed
+          height: '800px', // Adjust height as needed
+          border: 'none',
+          zIndex: '1000'
+        }}
+        title="Chatbot"
+      />
       
     </Router>
   );
