@@ -90,6 +90,8 @@ import { Copyright } from '@mui/icons-material';
 import CopyrightPage from './component/static/CopyRightPage';
 import FooterSection from './component/static/FooterSection';
 import Footers from './component/static/footer';
+import HireNowForm from './component/ui/HireUs/HireUs'
+import JoinUs from './component/ui/HireUs/JoinUs';
 
 
 
@@ -108,6 +110,9 @@ const App = () => {
         <Route path="/services"  element={<Services/>} />
         <Route path="/portfolio"  element={<Portfolio/>} />
         <Route path="/contactus"  element={<ContactPage/>} />
+        <Route path="/JoinUsSection" element={<JoinUs />} />   
+        
+        <Route path="/hireUsForm" element={<HireNowForm />} />
         <Route path="/hire-developers/django-developers"  element={<Django_developer/>} />
         <Route path="/hire-developers/hire-azure-services-developers"  element={<Azure_Developers/>} />
         <Route path="/hire-developers/hire-big-data-developers"  element={<Big_Data_developers/>} />
