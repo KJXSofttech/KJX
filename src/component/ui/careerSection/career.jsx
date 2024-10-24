@@ -537,7 +537,6 @@ const Products = () => {
                   
             
           
-            <BotCapabilities />
             
             <AIChatbotServices/>
             <ChatbotsSection />
